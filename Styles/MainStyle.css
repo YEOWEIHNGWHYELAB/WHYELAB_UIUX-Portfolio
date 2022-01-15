@@ -1,0 +1,99 @@
+*{
+    font-size: 1rem;
+    background: black;
+    color: white;
+}
+
+.title{
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+.sub-title{
+    font-size: 2rem;
+    box-sizing: border-box;
+    margin-left: 80px;
+    color: green; 
+}
+
+.heading{
+    font-size: 2rem;
+    text-align: justify;
+    box-sizing: border-box;
+    margin-left: 40px; 
+    color: red;
+}
+
+.content{
+    font-size: 1.5rem;
+    text-align: justify;
+    box-sizing: border-box;
+    margin-left: 120px; 
+}
+
+.content-highlight{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#content-highlight:hover{
+    background: green;
+    transform: translateX(0px);
+}
+
+.content-italics{
+    text-align: center;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.hovery:hover{
+    background: red;
+    text-align: center;
+    animation-name: animation_rgb;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation_rgb {
+    0%{
+        background: green;
+    }
+    25%{
+        transform: translateY(50px);
+        background: blue;
+    }
+    50%{
+        transform: translateY(0px);
+        background: cyan;
+    }
+    75%{
+        transform: translateY(-50px);
+        background: red;
+    }
+    100%{
+        transform: translateY(0px);
+        background: green;
+    }
+}
+
+#content-blue{
+    color: blue;
+}
+
+.border-surround{
+    border: 0.5rem outset red;
+    outline: 0.5rem solid green;
+    box-shadow: 0 0 0 2rem skyblue;
+    border-radius: 6px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+}
+
+.floatRight{
+    float:right;
+    margin-left:20px;
+    margin-right:500px;
+}
