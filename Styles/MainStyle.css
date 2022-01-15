@@ -31,14 +31,22 @@
     margin-left: 120px; 
 }
 
+.contentsub{
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    margin-left: 40px; 
+}
+
 .content-highlight{
+    padding-top: 10px; 
     text-align: center;
     font-size: 2rem;
 }
 
 #content-highlight:hover{
-    background: green;
-    transform: translateX(0px);
+    background: red;
+    transform: translateY(5px);
+    font-size: 2rem;
 }
 
 .content-italics{
