@@ -1,5 +1,4 @@
-import React from 'react';
-import theme from './theme'; // Import the dark theme
+import theme from './styling/GlobalTheme'; // Import the dark theme
 import { Box, Container, CssBaseline, ThemeProvider } from '@mui/material';
 import EducationSection from './sections/Education';
 import TechnicalSkillSection from './sections/TechnicalSkill';
