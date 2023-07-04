@@ -13,6 +13,14 @@ const RelevantProject = () => {
           <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
           {/* Add more project details if needed */}
         </CardContent>
+
+        <CardContent>
+          {/* Add information about your relevant projects here */}
+          <Typography variant="h6">Project Name</Typography>
+          <Typography variant="body2">Description of the project</Typography>
+          <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
+          {/* Add more project details if needed */}
+        </CardContent>
       </Card>
     </Box>
   );
