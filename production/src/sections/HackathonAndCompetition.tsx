@@ -5,8 +5,7 @@ const HackathonAndCompetition = () => {
     const hackathons = [
         'Hackathon 1',
         'Hackathon 2',
-        'Competition 1',
-        // Add more hackathons and competitions here
+        'Competition 1'
     ];
 
   return (

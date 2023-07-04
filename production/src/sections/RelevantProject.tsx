@@ -4,24 +4,32 @@ import { Box, Typography, Card, CardContent } from '@mui/material';
 const RelevantProject = () => {
   return (
     <Box>
-      <Typography variant="h4" color="primary">Relevant Projects</Typography>
-      <Card>
-        <CardContent>
-          {/* Add information about your relevant projects here */}
-          <Typography variant="h6">Project Name</Typography>
-          <Typography variant="body2">Description of the project</Typography>
-          <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
-          {/* Add more project details if needed */}
-        </CardContent>
+        <Typography variant="h4" color="primary">
+            Relevant Projects
+        </Typography>
 
-        <CardContent>
-            {/* Add information about your relevant projects here */}
-            <Typography variant="h6">Project Name</Typography>
-            <Typography variant="body2">Description of the project</Typography>
-            <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
-            {/* Add more project details if needed */}
-        </CardContent>
-      </Card>
+        <br/>
+
+        <Card>
+            <CardContent>
+                <Typography variant="h6">Project Name</Typography>
+                <Typography variant="body2">Description of the project</Typography>
+                <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
+            </CardContent>
+
+            <br/>
+
+            <CardContent
+                style={{ 
+                    backgroundColor: 'red',
+                    border: 'blue 3px solid'
+                }}
+            >
+                <Typography variant="h6">Project Name</Typography>
+                <Typography variant="body2">Description of the project</Typography>
+                <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
+            </CardContent>
+        </Card>
     </Box>
   );
 };
