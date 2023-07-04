@@ -10,19 +10,36 @@ const RelevantProject = () => {
 
         <br/>
 
-        <Card>
-            <CardContent>
+        <Card
+            style={{
+                backgroundColor: '#c2c2c2'
+            }}
+        >
+            <CardContent
+                style={{ 
+                    backgroundColor: 'red',
+                    border: 'blue 3px solid',
+                    maxWidth: '50%'
+                }}
+            >
                 <Typography variant="h6">Project Name</Typography>
                 <Typography variant="body2">Description of the project</Typography>
                 <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
             </CardContent>
+        </Card>
 
-            <br/>
+        <br/>
 
+        <Card
+            style={{
+                backgroundColor: '#c2c2c2'
+            }}
+        >
             <CardContent
                 style={{ 
                     backgroundColor: 'red',
-                    border: 'blue 3px solid'
+                    border: 'blue 3px solid',
+                    maxWidth: '50%'
                 }}
             >
                 <Typography variant="h6">Project Name</Typography>
