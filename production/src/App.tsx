@@ -13,10 +13,10 @@ const App = () => {
             <Container>
                 <Box mt={4}>
                     <EducationSection />
-                    <TechnicalSkillSection />
                     <WorkExperienceSection />
                     <HackathonAndCompetitionSection />
                     <RelevantProjectSection />
+                    <TechnicalSkillSection />
                 </Box>
             </Container>
         </ThemeProvider>
