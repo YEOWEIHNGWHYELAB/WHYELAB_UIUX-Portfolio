@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// src/App.tsx
 
-function App() {
+import React from 'react';
+import { Box, Container } from '@mui/material';
+import EducationSection from './sections/Education';
+import TechnicalSkillSection from './sections/TechnicalSkill';
+import WorkExperienceSection from './sections/WorkExperience';
+import HackathonAndCompetitionSection from './sections/HackathonAndCompetition';
+import RelevantProjectSection from './sections/RelevantProject';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Box mt={4}>
+        {/* Include the sections here */}
+        <EducationSection />
+        <TechnicalSkillSection />
+        <WorkExperienceSection />
+        <HackathonAndCompetitionSection />
+        <RelevantProjectSection />
+        {/* Add more sections as needed */}
+      </Box>
+    </Container>
   );
-}
+};
 
 export default App;
