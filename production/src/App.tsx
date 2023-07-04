@@ -9,16 +9,14 @@ import RelevantProjectSection from './sections/RelevantProject';
 const App = () => {
     return (
         <ThemeProvider theme={theme}>
-            <CssBaseline /> {/* Apply global base styles */}
+            <CssBaseline />
             <Container>
                 <Box mt={4}>
-                    {/* Include the sections here */}
                     <EducationSection />
                     <TechnicalSkillSection />
                     <WorkExperienceSection />
                     <HackathonAndCompetitionSection />
                     <RelevantProjectSection />
-                    {/* Add more sections as needed */}
                 </Box>
             </Container>
         </ThemeProvider>

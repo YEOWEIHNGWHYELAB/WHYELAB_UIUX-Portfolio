@@ -2,11 +2,10 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
     palette: {
-        mode: 'dark', // Set the theme mode to dark
+        mode: 'dark',
         primary: {
-        main: '#2196f3', // Customize primary color
+        main: '#2196f3',
         },
-        // You can customize other theme colors here if needed
     },
 });
 
