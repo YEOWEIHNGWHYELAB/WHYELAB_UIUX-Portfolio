@@ -25,10 +25,10 @@ const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
             </div>
             <div>
                 <Typography variant="h2" component="h2">
-                    About Me
+                    Hi there 👋
                 </Typography>
                 <Typography variant="body1">
-                    Some introduction about yourself
+                    I am a final year Computer Engineering Undergraduate @NUS
                 </Typography>
             </div>
         </div>
