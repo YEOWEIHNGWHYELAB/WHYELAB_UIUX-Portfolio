@@ -21,9 +21,12 @@ const App: React.FC = () => {
     const skillRef = useRef<HTMLDivElement>(null);
     const currentYear = new Date().getFullYear();
 
+    const headerHeight = 64;
+
     const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
         if (ref.current) {
-            ref.current.scrollIntoView({ behavior: 'smooth' });
+            const scrollOffset = ref.current.offsetTop - headerHeight;
+            window.scrollTo({ top: scrollOffset, behavior: 'smooth' });
         }
     };
 
@@ -31,8 +34,19 @@ const App: React.FC = () => {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Container>
-                <Box position="fixed" top={0} left={0} width="100%" height={64} zIndex={1} bgcolor="grey">
-                    <header style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
+                <Box 
+                    position="fixed" 
+                    top={0} 
+                    left={0} 
+                    width="100%" 
+                    height={headerHeight} 
+                    zIndex={1} 
+                    display='flex' 
+                    bgcolor="grey" 
+                    justifyContent='center' 
+                    alignItems='center'
+                >
+                    <header >
                         <Button onClick={() => scrollToSection(educationRef)}>
                             Education
                         </Button>
