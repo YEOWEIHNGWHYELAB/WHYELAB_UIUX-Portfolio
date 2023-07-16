@@ -46,6 +46,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": "https://yeoweihngwhyelab.github.io/WHYELAB_UIUX-Portfolio",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
