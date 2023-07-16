@@ -6,11 +6,12 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
 
     useEffect(() => {
         const handleScroll = () => {
-        const experienceSection = document.getElementById('experience-section');
-        if (experienceSection) {
-            const rect = experienceSection.getBoundingClientRect();
-            setShowAnimation(rect.top <= window.innerHeight);
-        }
+            const experienceSection = document.getElementById('experience-section');
+            
+            if (experienceSection) {
+                const rect = experienceSection.getBoundingClientRect();
+                setShowAnimation(rect.top <= window.innerHeight);
+            }
         };
 
         window.addEventListener('scroll', handleScroll);

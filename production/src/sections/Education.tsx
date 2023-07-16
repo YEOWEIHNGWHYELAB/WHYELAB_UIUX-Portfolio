@@ -7,6 +7,7 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
     useEffect(() => {
         const handleScroll = () => {
             const educationSection = document.getElementById('education-section');
+            
             if (educationSection) {
                 const rect = educationSection.getBoundingClientRect();
                 setShowAnimation(rect.top <= window.innerHeight);
