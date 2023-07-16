@@ -7,7 +7,7 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
     useEffect(() => {
         const handleScroll = () => {
             const educationSection = document.getElementById('education-section');
-            
+
             if (educationSection) {
                 const rect = educationSection.getBoundingClientRect();
                 setShowAnimation(rect.top <= window.innerHeight);
@@ -49,6 +49,7 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
                         <Card
                             key={index}
                             sx={{
+                                backgroundColor: '#220022',
                                 marginBottom: '1rem',
                                 marginLeft: showAnimation && index % 2 === 0 ? '0' : 'auto', // Align left for even indices
                                 marginRight: showAnimation && index % 2 === 1 ? '0' : 'auto', // Align right for odd indices

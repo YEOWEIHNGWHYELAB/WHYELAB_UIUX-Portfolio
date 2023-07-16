@@ -5,6 +5,7 @@ import {
   Container,
   CssBaseline,
   Button,
+  Stack,
   ThemeProvider,
 } from '@mui/material';
 
@@ -53,66 +54,68 @@ const App: React.FC = () => {
                     }}                
                 >
                     <header >
-                        <Button 
-                            onClick={() => scrollToSection(aboutMeRef)}
-                            style={{
-                                color: "#fff"
-                            }}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#00FFb4'}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                        >
-                            About Me
-                        </Button>
-                        <Button 
-                            onClick={() => scrollToSection(educationRef)}
-                            style={{
-                                color: "#fff"
-                            }}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff69b4'}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                        >
-                            Education
-                        </Button>
-                        <Button 
-                            onClick={() => scrollToSection(workExperienceRef)}
-                            style={{
-                                color: "#fff"
-                            }}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#3069b0'}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                        >
-                            Work Experience
-                        </Button>
-                        <Button
-                            onClick={() => scrollToSection(hackathonRef)}
-                            style={{
-                                color: "#fff"
-                            }}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff624b'}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                        >
-                            Hackathons and Competitions
-                        </Button>
-                        <Button 
-                            onClick={() => scrollToSection(projectRef)}
-                            style={{
-                                color: "#fff"
-                            }}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0069b4'}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                        >
-                            Relevant Projects
-                        </Button>
-                        <Button 
-                            onClick={() => scrollToSection(skillRef)}
-                            style={{
-                                color: "#fff"
-                            }}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff00b4'}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                        >
-                            Technical Skills
-                        </Button>
+                        <Stack direction="row" spacing={2}>
+                            <Button 
+                                onClick={() => scrollToSection(aboutMeRef)}
+                                style={{
+                                    color: "#fff"
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#00FFb4'}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                            >
+                                About Me
+                            </Button>
+                            <Button 
+                                onClick={() => scrollToSection(educationRef)}
+                                style={{
+                                    color: "#fff"
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff69b4'}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                            >
+                                Education
+                            </Button>
+                            <Button 
+                                onClick={() => scrollToSection(workExperienceRef)}
+                                style={{
+                                    color: "#fff"
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#3069b0'}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                            >
+                                Work Experience
+                            </Button>
+                            <Button
+                                onClick={() => scrollToSection(hackathonRef)}
+                                style={{
+                                    color: "#fff"
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff624b'}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                            >
+                                Hackathons and Competitions
+                            </Button>
+                            <Button 
+                                onClick={() => scrollToSection(projectRef)}
+                                style={{
+                                    color: "#fff"
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0069b4'}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                            >
+                                Relevant Projects
+                            </Button>
+                            <Button 
+                                onClick={() => scrollToSection(skillRef)}
+                                style={{
+                                    color: "#fff"
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff00b4'}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                            >
+                                Technical Skills
+                            </Button>
+                        </Stack>
                     </header>
                 </Box>
 

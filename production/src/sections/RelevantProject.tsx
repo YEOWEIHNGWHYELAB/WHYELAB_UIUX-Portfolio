@@ -1,6 +1,17 @@
 import React, { forwardRef } from 'react';
 import { Box, Typography, Card, CardContent } from '@mui/material';
 
+function getRandomDarkColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+
+    for (let i = 0; i < 3; i++) {
+        color += letters[Math.floor(Math.random() * 5)];
+    }
+
+  return color;
+}
+
 const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref}>
@@ -18,9 +29,8 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
             >
                 <CardContent
                     style={{ 
-                        backgroundColor: 'red',
-                        border: 'blue 3px solid',
-                        maxWidth: '50%'
+                        backgroundColor: getRandomDarkColor(),
+                        border: 'white 3px solid',
                     }}
                 >
                     <Typography variant="h6">Project Name</Typography>
@@ -38,9 +48,8 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
             >
                 <CardContent
                     style={{ 
-                        backgroundColor: 'red',
-                        border: 'blue 3px solid',
-                        maxWidth: '50%'
+                        backgroundColor: getRandomDarkColor(),
+                        border: 'white 3px solid',
                     }}
                 >
                     <Typography variant="h6">Project Name</Typography>
