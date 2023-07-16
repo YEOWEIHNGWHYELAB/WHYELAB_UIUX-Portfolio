@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
-import profileImage from '../profile.jpg';
+import profileImage from '../images/profile.jpg';
 
 const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
     return (
