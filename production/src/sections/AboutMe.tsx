@@ -33,7 +33,7 @@ const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
                     Hi there 👋
                 </Typography>
                 <Typography variant="body1">
-                    I am a final year Computer Engineering Undergraduate @NUS
+                    I am <span style={{ color: 'red' }}>YEO WEI HNG</span>, a final year Computer Engineering Undergraduate @NUS
                 </Typography>
 
                 <br/>
