@@ -7,6 +7,8 @@ import {
   Button,
   ThemeProvider,
 } from '@mui/material';
+
+import AboutMeSection from './sections/AboutMe';
 import EducationSection from './sections/Education';
 import TechnicalSkillSection from './sections/TechnicalSkill';
 import WorkExperienceSection from './sections/WorkExperience';
@@ -14,6 +16,7 @@ import HackathonAndCompetitionSection from './sections/HackathonAndCompetition';
 import RelevantProjectSection from './sections/RelevantProject';
 
 const App: React.FC = () => {
+    const aboutMeRef = useRef<HTMLDivElement>(null);
     const educationRef = useRef<HTMLDivElement>(null);
     const workExperienceRef = useRef<HTMLDivElement>(null);
     const hackathonRef = useRef<HTMLDivElement>(null);
@@ -22,11 +25,12 @@ const App: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
     const headerHeight = 64;
+    const photoOffsetHeight = headerHeight + 100;
 
     const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
         if (ref.current) {
             const scrollOffset = ref.current.offsetTop - headerHeight;
-            window.scrollTo({ top: scrollOffset, behavior: 'smooth' });
+            window.scrollTo({ top: scrollOffset, behavior: "smooth" });
         }
     };
 
@@ -41,31 +45,81 @@ const App: React.FC = () => {
                     width="100%" 
                     height={headerHeight} 
                     zIndex={1} 
-                    display='flex' 
-                    bgcolor="grey" 
-                    justifyContent='center' 
-                    alignItems='center'
+                    display="flex"
+                    justifyContent="center" 
+                    alignItems="center"
+                    style={{
+                        background: "linear-gradient(to right, #00008b, #ff69b4)"
+                    }}                
                 >
                     <header >
-                        <Button onClick={() => scrollToSection(educationRef)}>
+                        <Button 
+                            onClick={() => scrollToSection(aboutMeRef)}
+                            style={{
+                                color: "#fff"
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#00FFb4'}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                        >
+                            About Me
+                        </Button>
+                        <Button 
+                            onClick={() => scrollToSection(educationRef)}
+                            style={{
+                                color: "#fff"
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff69b4'}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                        >
                             Education
                         </Button>
-                        <Button onClick={() => scrollToSection(workExperienceRef)}>
+                        <Button 
+                            onClick={() => scrollToSection(workExperienceRef)}
+                            style={{
+                                color: "#fff"
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#3069b0'}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                        >
                             Work Experience
                         </Button>
-                        <Button onClick={() => scrollToSection(hackathonRef)}>
+                        <Button
+                            onClick={() => scrollToSection(hackathonRef)}
+                            style={{
+                                color: "#fff"
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff624b'}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                        >
                             Hackathons and Competitions
                         </Button>
-                        <Button onClick={() => scrollToSection(projectRef)}>
+                        <Button 
+                            onClick={() => scrollToSection(projectRef)}
+                            style={{
+                                color: "#fff"
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0069b4'}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                        >
                             Relevant Projects
                         </Button>
-                        <Button onClick={() => scrollToSection(skillRef)}>
+                        <Button 
+                            onClick={() => scrollToSection(skillRef)}
+                            style={{
+                                color: "#fff"
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff00b4'}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                        >
                             Technical Skills
                         </Button>
                     </header>
                 </Box>
 
                 <Box marginTop={12}>
+                    <Box style={{ height: `calc(100vh - ${photoOffsetHeight}px)` }} display={"flex"} justifyContent={"center"} marginBottom={9}>
+                        <AboutMeSection ref={aboutMeRef} />
+                    </Box>
                     <Box marginBottom={9}>
                         <EducationSection ref={educationRef} />
                     </Box>
@@ -87,7 +141,13 @@ const App: React.FC = () => {
             <Box 
                 width="100%"
                 height={64}
-                sx={{ backgroundColor: '#2196f3', color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }} 
+                sx={{ 
+                    backgroundColor: '#2196f3',
+                    color: '#fff',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }} 
             >
                 <footer> 
                     <p>&copy; {currentYear} Yeo Wei Hng. All rights reserved.</p>
