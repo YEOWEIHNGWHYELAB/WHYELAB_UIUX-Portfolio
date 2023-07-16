@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.604c43c7.css",
-    "main.js": "/static/js/main.2a94c6f7.js",
-    "static/js/787.ec81ae8c.chunk.js": "/static/js/787.ec81ae8c.chunk.js",
-    "static/media/itchio-logo.png": "/static/media/itchio-logo.5099b9c5a83b2a0b387c.png",
-    "static/media/profile.jpg": "/static/media/profile.fe224545d4392144cefe.jpg",
-    "static/media/devpost-logo.png": "/static/media/devpost-logo.c83ab1258c4084d0a17c.png",
-    "index.html": "/index.html",
-    "main.604c43c7.css.map": "/static/css/main.604c43c7.css.map",
-    "main.2a94c6f7.js.map": "/static/js/main.2a94c6f7.js.map",
-    "787.ec81ae8c.chunk.js.map": "/static/js/787.ec81ae8c.chunk.js.map"
+    "main.css": "/WHYELAB_UIUX-Portfolio/static/css/main.604c43c7.css",
+    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.943530bc.js",
+    "static/js/787.ec81ae8c.chunk.js": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js",
+    "static/media/itchio-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/itchio-logo.5099b9c5a83b2a0b387c.png",
+    "static/media/profile.jpg": "/WHYELAB_UIUX-Portfolio/static/media/profile.fe224545d4392144cefe.jpg",
+    "static/media/devpost-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/devpost-logo.c83ab1258c4084d0a17c.png",
+    "index.html": "/WHYELAB_UIUX-Portfolio/index.html",
+    "main.604c43c7.css.map": "/WHYELAB_UIUX-Portfolio/static/css/main.604c43c7.css.map",
+    "main.943530bc.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.943530bc.js.map",
+    "787.ec81ae8c.chunk.js.map": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.604c43c7.css",
-    "static/js/main.2a94c6f7.js"
+    "static/js/main.943530bc.js"
   ]
 }
