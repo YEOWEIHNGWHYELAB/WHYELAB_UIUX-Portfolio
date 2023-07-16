@@ -3,12 +3,12 @@ import { Box, Typography, Grid, LinearProgress } from '@mui/material';
 
 const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
     const technicalSkills = [
-        { name: 'JavaScript', percentage: 90 },
-        { name: 'TypeScript', percentage: 85 },
-        { name: 'React', percentage: 95 },
-        { name: 'HTML', percentage: 80 },
-        { name: 'CSS', percentage: 75 },
-        { name: 'UI/UX Design', percentage: 70 },
+        { name: 'C++', percentage: 70 },
+        { name: 'Java', percentage: 90 },
+        { name: 'Python', percentage: 80 },
+        { name: 'HTML & CSS', percentage: 65 },
+        { name: 'SQL', percentage: 90 },
+        { name: 'Java Script', percentage: 80 }
     ];
 
     return (

@@ -20,7 +20,6 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
     }, []);
 
     const experiences = [
-        // Add your work experiences here
         {
             company: 'Company A',
             title: 'Job Title A',
@@ -33,7 +32,6 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
             date: 'Date B',
             description: 'Description of Job B',
         },
-        // Add more experiences if needed
     ];
 
     return (

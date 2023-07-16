@@ -15,12 +15,11 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
         };
 
         window.addEventListener('scroll', handleScroll);
-        
+
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const experiences = [
-        // Add your work experiences here
         {
             company: 'Company A',
             title: 'Job Title A',
@@ -33,7 +32,6 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             date: 'Date B',
             description: 'Description of Job B',
         },
-        // Add more experiences if needed
     ];
 
     return (

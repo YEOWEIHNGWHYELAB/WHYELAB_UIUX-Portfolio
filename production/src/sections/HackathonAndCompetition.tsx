@@ -1,12 +1,15 @@
 import React, { forwardRef, useEffect } from 'react';
-import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
-import '../styling/HackathonAndCompetition.css'; // Import CSS file for animation styles
+import { Box, Card, CardContent, IconButton, Link, Typography } from '@mui/material';
+import { GitHub } from '@mui/icons-material';
+
+import DevPostIcon from '../devpost-logo.png';
+import '../styling/HackathonAndCompetition.css';
 
 const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     const hackathons = [
-        { title: 'Hackathon 1', description: 'Description 1' },
-        { title: 'Hackathon 2', description: 'Description 2' },
-        { title: 'Competition 1', description: 'Description 3' }
+        { title: 'Hackathon 1', description: 'Description 1', githubUrl: 'https://github.com/project1', devpostUrl: 'https://devpost.com/project1' },
+        { title: 'Hackathon 2', description: 'Description 2', githubUrl: 'https://github.com/project2' },
+        { title: 'Competition 1', description: 'Description 3', devpostUrl: 'https://devpost.com/project3' }
     ];
 
     useEffect(() => {
@@ -34,17 +37,55 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     return (
         <div ref={ref}>
             <Box id="hackathonncompetition-section" className="hackathon-section">
-                <Typography variant="h4" color="primary">Hackathons & Competitions</Typography>
-                <List>
-                    {hackathons.map((event, index) => (
-                        <ListItem key={event.title} className="list-component">
-                            <ListItemText
-                                primary={event.title}
-                                secondary={event.description}
-                            />
-                        </ListItem>
-                    ))}
-                </List>
+                <Typography variant="h4" color="primary" sx={{ marginBottom: '1rem' }}>
+                    Hackathons & Competitions
+                </Typography>
+
+                {hackathons.map((event, index) => (
+                    <Card
+                        key={index}
+                        sx={{
+                            marginBottom: '1rem',
+                        }}
+                    >
+                        <CardContent 
+                            className="list-component"
+                            style={{ 
+                                border: 'white 3px solid'
+                            }}
+                        >
+                            <Typography variant="h6">{event.title}</Typography>
+
+                            {event.githubUrl && (
+                                <IconButton href={event.githubUrl} target="_blank">
+                                    <GitHub />
+                                </IconButton>
+                            )}
+
+                            {event.devpostUrl && (
+                                <IconButton 
+                                    href={event.devpostUrl} 
+                                    target="_blank"
+                                    style={{
+                                        borderRadius: '50%',
+                                        width: '40px',
+                                        height: '40px',
+                                     }}
+                                >
+                                    <Link color="inherit" underline="none">
+                                        <img
+                                            src={DevPostIcon}
+                                            alt="DevPost"
+                                            style={{ width: '24px', height: '24px', verticalAlign: 'middle' }}
+                                        />
+                                    </Link>
+                                </IconButton>
+                            )}
+
+                            <Typography variant="body1">{event.description}</Typography>
+                        </CardContent>
+                    </Card>
+                ))}
             </Box>
         </div>
     );

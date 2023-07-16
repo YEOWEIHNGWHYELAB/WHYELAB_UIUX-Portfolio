@@ -9,3 +9,5 @@ Linkedin: https://www.flaticon.com/free-icon/linkedin_174857
 GitHub: https://www.flaticon.com/free-icon/github_733553
 
 Profile: https://www.flaticon.com/free-icon/profile_3135715
+
+DevPost: https://seeklogo.com/vector-logo/320001/devpost
