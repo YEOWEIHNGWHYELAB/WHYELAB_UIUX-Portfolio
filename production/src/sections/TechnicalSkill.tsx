@@ -8,7 +8,16 @@ const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
         { name: 'Python', percentage: 80 },
         { name: 'HTML & CSS', percentage: 65 },
         { name: 'SQL', percentage: 90 },
-        { name: 'Java Script', percentage: 80 }
+        { name: 'Java Script', percentage: 80 },
+        { name: 'ExpressJS', percentage: 90 },
+        { name: 'ASP.NET', percentage: 75 },
+        { name: 'Django', percentage: 70 },
+        { name: 'PostgreSQL', percentage: 90 },
+        { name: 'MySQL', percentage: 70 },
+        { name: 'MongoDB', percentage: 80 },
+        { name: 'Neo4j', percentage: 70 },
+        { name: 'Carla Simulator', percentage: 60 },
+        { name: 'PyTorch', percentage: 50 },
     ];
 
     return (

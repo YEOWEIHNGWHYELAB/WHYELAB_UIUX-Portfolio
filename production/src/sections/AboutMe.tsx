@@ -1,5 +1,6 @@
 import React, { forwardRef } from 'react';
 import { Box, Typography } from '@mui/material';
+
 import profileImage from '../profile.jpg';
 
 const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
