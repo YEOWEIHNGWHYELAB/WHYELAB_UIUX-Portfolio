@@ -7,9 +7,22 @@ import '../styling/HackathonAndCompetition.css';
 
 const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     const hackathons = [
-        { title: 'Hackathon 1', description: 'Description 1', githubUrl: 'https://github.com/project1', devpostUrl: 'https://devpost.com/project1' },
-        { title: 'Hackathon 2', description: 'Description 2', githubUrl: 'https://github.com/project2' },
-        { title: 'Competition 1', description: 'Description 3', devpostUrl: 'https://devpost.com/project3' }
+        { 
+            title: 'Hackathon 1', 
+            description: 'Description 1', 
+            githubUrl: 'https://github.com/project1', 
+            devpostUrl: 'https://devpost.com/project1' 
+        },
+        { 
+            title: 'Hackathon 2', 
+            description: 'Description 2', 
+            githubUrl: 'https://github.com/project2' 
+        },
+        { 
+            title: 'Competition 1', 
+            description: 'Description 3', 
+            devpostUrl: 'https://devpost.com/project3' 
+        }
     ];
 
     useEffect(() => {
@@ -37,7 +50,7 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     return (
         <div ref={ref}>
             <Box id="hackathonncompetition-section" className="hackathon-section">
-                <Typography variant="h4" color="primary" sx={{ marginBottom: '1rem' }}>
+                <Typography variant="h3" color="primary" sx={{ marginBottom: '1rem' }}>
                     Hackathons & Competitions
                 </Typography>
 
@@ -54,7 +67,7 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
                                 border: 'white 3px solid'
                             }}
                         >
-                            <Typography variant="h6">{event.title}</Typography>
+                            <Typography variant="h4">{event.title}</Typography>
 
                             {event.githubUrl && (
                                 <IconButton href={event.githubUrl} target="_blank">

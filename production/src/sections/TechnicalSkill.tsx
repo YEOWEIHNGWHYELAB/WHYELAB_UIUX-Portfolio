@@ -23,7 +23,7 @@ const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
     return (
         <div ref={ref}>
             <Box sx={{ mb: 4 }}>
-                <Typography variant="h4" color="primary">Technical Skills</Typography>
+                <Typography variant="h3" color="primary">Technical Skills</Typography>
             </Box>
                 
                 <Grid container spacing={10}>

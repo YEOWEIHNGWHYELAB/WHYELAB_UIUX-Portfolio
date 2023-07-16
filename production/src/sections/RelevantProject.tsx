@@ -19,7 +19,7 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <div ref={ref}>
         <Box>
-            <Typography variant="h4" color="primary">
+            <Typography variant="h3" color="primary">
                 Relevant Projects
             </Typography>
 
@@ -36,18 +36,18 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
                         border: 'white 3px solid',
                     }}
                 >
-                    <Typography variant="h6">2D Self Driving Car Game</Typography>
+                    <Typography variant="h4">Game Stat Tracker</Typography>
                     <IconButton 
                         href="https://github.com/YEOWEIHNGWHYELAB/GameStatTracker" 
                         target="_blank"
                     >
                         <GitHub />
                     </IconButton>
-                    <Typography variant="body2">
+                    <Typography variant="body1">
                         Technologies used: Django, PostgreSQL, ReactJS
                     </Typography>
                     <br/>
-                    <Typography variant="body2">
+                    <Typography variant="body1">
                         A full stack application that allows users to track their game statistics. Users can create an account, add games, and add game session 
                         data such as the score of the game. The application also allows the user to view their games played in the form of a pie chart.
                     </Typography>
@@ -67,7 +67,7 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
                         border: 'white 3px solid',
                     }}
                 >
-                    <Typography variant="h6">2D Self Driving Car Game</Typography>
+                    <Typography variant="h4">2D Self Driving Car Game</Typography>
                     <IconButton 
                         href="https://github.com/YEOWEIHNGWHYELAB/2D-Self-Driving-Car-Python3" 
                         target="_blank"
@@ -91,11 +91,11 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
                             />
                         </Link>
                     </IconButton>
-                    <Typography variant="body2">
+                    <Typography variant="body1">
                         Technologies used: PyGame, PyTorch
                     </Typography>
                     <br/>
-                    <Typography variant="body2">
+                    <Typography variant="body1">
                         2D self driving car that uses a reinforcement learning with experience replay algorithm to learn how to drive and avoid obstacles. 
                         Obstacles can be drawn onto the screen and deleted from the screen. After training, the brain can be saved and be loaded for future
                         usage.

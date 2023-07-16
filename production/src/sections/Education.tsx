@@ -19,31 +19,34 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const experiences = [
+    const educations = [
         {
-            company: 'Company A',
-            title: 'Job Title A',
-            date: 'Date A',
-            description: 'Description of Job A',
+            school: 'National University of Singapore',
+            description: 'Bachelor of Engineering (Computer Engineering)',
+            date: 'August 2020 - May 2024',
         },
         {
-            company: 'Company B',
-            title: 'Job Title B',
-            date: 'Date B',
-            description: 'Description of Job B',
+            school: 'Arizona State University',
+            description: 'Student Exchange (Computer Science)',
+            date: 'August 2022 - December 2022',
+        },
+        {
+            school: 'Tampines Junior College',
+            description: 'GCE A Levels',
+            date: 'February 2016 - November 2017',
         },
     ];
 
     return (
         <div ref={ref}>
             <Box id="education-section">
-                <Typography variant="h4" color="primary" sx={{ marginBottom: '1rem' }}>Education</Typography>
+                <Typography variant="h3" color="primary" sx={{ marginBottom: '1rem' }}>Education</Typography>
                 <div 
                     style={{
                         overflowX: 'hidden'
                     }}
                 >
-                    {experiences.map((experience, index) => (
+                    {educations.map((education, index) => (
                         <Card
                             key={index}
                             sx={{
@@ -56,10 +59,9 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
                             }}
                         >
                             <CardContent>
-                                <Typography variant="h6">{experience.company}</Typography>
-                                <Typography variant="body1">{experience.title}</Typography>
-                                <Typography variant="body2">{experience.date}</Typography>
-                                <Typography variant="body2">{experience.description}</Typography>
+                                <Typography variant="h4">{education.school}</Typography>
+                                <Typography variant="body1">{education.date}</Typography>
+                                <Typography variant="body1">{education.description}</Typography>
                             </CardContent>
                         </Card>
                     ))}
