@@ -1,6 +1,12 @@
 import React, { useRef } from 'react';
 import theme from './styling/GlobalTheme';
-import { Box, Button, Container, CssBaseline, ThemeProvider } from '@mui/material';
+import {
+  Box,
+  Container,
+  CssBaseline,
+  Button,
+  ThemeProvider,
+} from '@mui/material';
 import EducationSection from './sections/Education';
 import TechnicalSkillSection from './sections/TechnicalSkill';
 import WorkExperienceSection from './sections/WorkExperience';
@@ -13,46 +19,66 @@ const App: React.FC = () => {
     const hackathonRef = useRef<HTMLDivElement>(null);
     const projectRef = useRef<HTMLDivElement>(null);
     const skillRef = useRef<HTMLDivElement>(null);
+    const currentYear = new Date().getFullYear();
 
     const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
         if (ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
-    
+
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Container>
-                <header>
-                    <Box position="fixed" display="flex" justifyContent="space-between">
-                        <div>
-                            <Button onClick={() => scrollToSection(educationRef)}>
-                                Education
-                            </Button>
-                            <Button onClick={() => scrollToSection(workExperienceRef)}>
-                                Work Experience
-                            </Button>
-                            <Button onClick={() => scrollToSection(hackathonRef)}>
-                                Hackathons and Competitions
-                            </Button>
-                            <Button onClick={() => scrollToSection(projectRef)}>
-                                Relevant Projects
-                            </Button>
-                            <Button onClick={() => scrollToSection(skillRef)}>
-                                Technical Skills
-                            </Button>
-                        </div>
+                <Box position="fixed" top={0} left={0} width="100%" height={64} zIndex={1} bgcolor="grey">
+                    <header style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
+                        <Button onClick={() => scrollToSection(educationRef)}>
+                            Education
+                        </Button>
+                        <Button onClick={() => scrollToSection(workExperienceRef)}>
+                            Work Experience
+                        </Button>
+                        <Button onClick={() => scrollToSection(hackathonRef)}>
+                            Hackathons and Competitions
+                        </Button>
+                        <Button onClick={() => scrollToSection(projectRef)}>
+                            Relevant Projects
+                        </Button>
+                        <Button onClick={() => scrollToSection(skillRef)}>
+                            Technical Skills
+                        </Button>
+                    </header>
+                </Box>
+
+                <Box marginTop={12}>
+                    <Box marginBottom={9}>
+                        <EducationSection ref={educationRef} />
                     </Box>
-                </header>
-                <Box mt={4}>
-                    <EducationSection ref={educationRef} />
-                    <WorkExperienceSection ref={workExperienceRef} />
-                    <HackathonAndCompetitionSection  ref={hackathonRef} />
-                    <RelevantProjectSection ref={projectRef} />
-                    <TechnicalSkillSection  ref={skillRef} />
+                    <Box marginBottom={9}>
+                        <WorkExperienceSection ref={workExperienceRef} />
+                    </Box>
+                    <Box marginBottom={9}>
+                        <HackathonAndCompetitionSection ref={hackathonRef} />
+                    </Box>
+                    <Box marginBottom={9}>
+                        <RelevantProjectSection ref={projectRef} />
+                    </Box>
+                    <Box marginBottom={9}>
+                        <TechnicalSkillSection ref={skillRef} />
+                    </Box>
                 </Box>
             </Container>
+
+            <Box 
+                width="100%"
+                height={64}
+                sx={{ backgroundColor: '#2196f3', color: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }} 
+            >
+                <footer> 
+                    <p>&copy; {currentYear} Yeo Wei Hng. All rights reserved.</p>
+                </footer>
+            </Box>
         </ThemeProvider>
     );
 };
