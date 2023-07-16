@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import theme from './styling/GlobalTheme'; // Import the dark theme
-import { Box, Container, CssBaseline, Button, ThemeProvider } from '@mui/material';
+import theme from './styling/GlobalTheme';
+import { Box, Button, Container, CssBaseline, ThemeProvider } from '@mui/material';
 import EducationSection from './sections/Education';
 import TechnicalSkillSection from './sections/TechnicalSkill';
 import WorkExperienceSection from './sections/WorkExperience';
@@ -24,25 +24,28 @@ const App: React.FC = () => {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Container>
-            <Box mt={4}>
-                    <header>
-                        <Button onClick={() => scrollToSection(educationRef)}>
-                            Education
-                        </Button>
-                        <Button onClick={() => scrollToSection(workExperienceRef)}>
-                            Work Experience
-                        </Button>
-                        <Button onClick={() => scrollToSection(hackathonRef)}>
-                            Hackathons and Competitions
-                        </Button>
-                        <Button onClick={() => scrollToSection(projectRef)}>
-                            Relevant Projects
-                        </Button>
-                        <Button onClick={() => scrollToSection(skillRef)}>
-                            Technical Skills
-                        </Button>
-                    </header>
-                    
+                <header>
+                    <Box position="fixed" display="flex" justifyContent="space-between">
+                        <div>
+                            <Button onClick={() => scrollToSection(educationRef)}>
+                                Education
+                            </Button>
+                            <Button onClick={() => scrollToSection(workExperienceRef)}>
+                                Work Experience
+                            </Button>
+                            <Button onClick={() => scrollToSection(hackathonRef)}>
+                                Hackathons and Competitions
+                            </Button>
+                            <Button onClick={() => scrollToSection(projectRef)}>
+                                Relevant Projects
+                            </Button>
+                            <Button onClick={() => scrollToSection(skillRef)}>
+                                Technical Skills
+                            </Button>
+                        </div>
+                    </Box>
+                </header>
+                <Box mt={4}>
                     <EducationSection ref={educationRef} />
                     <WorkExperienceSection ref={workExperienceRef} />
                     <HackathonAndCompetitionSection  ref={hackathonRef} />
