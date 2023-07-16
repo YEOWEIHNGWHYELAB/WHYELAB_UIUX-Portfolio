@@ -1,54 +1,56 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Box, Typography, Card, CardContent } from '@mui/material';
 
-const RelevantProject = () => {
+const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <Box>
-        <Typography variant="h4" color="primary">
-            Relevant Projects
-        </Typography>
+    <div ref={ref}>
+        <Box>
+            <Typography variant="h4" color="primary">
+                Relevant Projects
+            </Typography>
 
-        <br/>
+            <br/>
 
-        <Card
-            style={{
-                backgroundColor: '#c2c2c2'
-            }}
-        >
-            <CardContent
-                style={{ 
-                    backgroundColor: 'red',
-                    border: 'blue 3px solid',
-                    maxWidth: '50%'
+            <Card
+                style={{
+                    backgroundColor: '#c2c2c2'
                 }}
             >
-                <Typography variant="h6">Project Name</Typography>
-                <Typography variant="body2">Description of the project</Typography>
-                <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
-            </CardContent>
-        </Card>
+                <CardContent
+                    style={{ 
+                        backgroundColor: 'red',
+                        border: 'blue 3px solid',
+                        maxWidth: '50%'
+                    }}
+                >
+                    <Typography variant="h6">Project Name</Typography>
+                    <Typography variant="body2">Description of the project</Typography>
+                    <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
+                </CardContent>
+            </Card>
 
-        <br/>
+            <br/>
 
-        <Card
-            style={{
-                backgroundColor: '#c2c2c2'
-            }}
-        >
-            <CardContent
-                style={{ 
-                    backgroundColor: 'red',
-                    border: 'blue 3px solid',
-                    maxWidth: '50%'
+            <Card
+                style={{
+                    backgroundColor: '#c2c2c2'
                 }}
             >
-                <Typography variant="h6">Project Name</Typography>
-                <Typography variant="body2">Description of the project</Typography>
-                <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
-            </CardContent>
-        </Card>
-    </Box>
+                <CardContent
+                    style={{ 
+                        backgroundColor: 'red',
+                        border: 'blue 3px solid',
+                        maxWidth: '50%'
+                    }}
+                >
+                    <Typography variant="h6">Project Name</Typography>
+                    <Typography variant="body2">Description of the project</Typography>
+                    <Typography variant="body2">Technologies used: React, TypeScript, etc.</Typography>
+                </CardContent>
+            </Card>
+        </Box>
+    </div>
   );
-};
+});
 
 export default RelevantProject;

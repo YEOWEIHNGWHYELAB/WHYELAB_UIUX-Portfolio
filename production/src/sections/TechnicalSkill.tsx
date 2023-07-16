@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
 
-const TechnicalSkill = () => {
+const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
     const technicalSkills = [
         'JavaScript',
         'TypeScript',
@@ -13,17 +13,19 @@ const TechnicalSkill = () => {
     ];
 
     return (
-        <Box>
-            <Typography variant="h4" color="primary">Technical Skills</Typography>
-            <List>
-                {technicalSkills.map(skill => (
-                    <ListItem key={skill}>
-                        <ListItemText primary={skill} />
-                    </ListItem>
-                ))}
-            </List>
-        </Box>
+        <div ref={ref}>
+            <Box>
+                <Typography variant="h4" color="primary">Technical Skills</Typography>
+                <List>
+                    {technicalSkills.map(skill => (
+                        <ListItem key={skill}>
+                            <ListItemText primary={skill} />
+                        </ListItem>
+                    ))}
+                </List>
+            </Box>
+        </div>
     );
-};
+});
 
 export default TechnicalSkill;
