@@ -1,5 +1,11 @@
 import React, { forwardRef, useEffect, useState } from "react";
-import { Box, Typography, Card, CardContent } from "@mui/material";
+import { Avatar, Box, Typography, Card, CardContent } from "@mui/material";
+
+import anacleLogo from "../images/anacle-logo.png";
+import geomotionLogo from "../images/geomotion-logo.png";
+import recruitExpressLogo from "../images/recruit-express-logo.jpeg";
+import genericLogo from "../images/generic-company-logo.png";
+import rsafLogo from "../images/rsaf-logo.png";
 
 const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     const [showAnimation, setShowAnimation] = useState(false);
@@ -32,6 +38,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Ported old software modules into the newer Simplicity software to maintain usability of old software on a new platform for our clients.
                 • Researched and integrated Microsoft Automatic Graph Layout to maintain compatibility with modules that use the Microsoft Workflow. This is to maintain compatibility when Microsoft Workflow Foundation gets deprecated.
             `,
+            logo: anacleLogo
         },
         {
             company: "Geomotion (Singapore) Private Limited",
@@ -43,6 +50,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Collaborated with intern colleague to develop a full stack enterprise system using Canvas API, Django, PostgreSQL that is maintainable and extensible as required by the company. The enterprise system aims to digitize all of client"s borehole data, automate generation of borehole reports, AGS data and cross-section reports.
                 • Deployed the enterprise system onto the Geomotion Web Server for production using Gunicorn and Nginx with SSL certificate. The enterprise system has been running smoothly since the deployment and weekly daily backup has been made and it has the potential to cut down up to 700 hours of man hours annually.
             `,
+            logo: geomotionLogo
         },
         {
             company: "Recruit Express",
@@ -54,6 +62,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Collaborated with the swap team on ushering people to designated swab test area to maintain swabbing team"s efficiency.
                 • Managed patients coming for swab test and ensuring safe distancing of patients.
             `,
+            logo: recruitExpressLogo
         },
         {
             company: "Hup Huat Switch Board Co",
@@ -66,6 +75,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Collaborated with shop owner to ensure transaction goes smoothly, so customers" demand is met.
                 • Communicated with the customers to check their requirements and proposed relevant or appropriate products and explain its features and benefits.
             `,
+            logo: genericLogo
         },
         {
             company: "Republic of Singapore Air Force (National Service)",
@@ -78,6 +88,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Servicing and maintaining vehicles (mileage with 40 km or 20 km) to assure vehicles are road ready. Through changing of oil, coolant, and inspection of vehicle parts.
                 • Torquing wheel nuts to ensure wheels are well secured to correct specifications.
             `,
+            logo: rsafLogo
         }
     ];
 
@@ -103,11 +114,23 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                             }}
                         >
                             <CardContent>
+                                <Avatar
+                                    alt={experience.company}
+                                    src={experience.logo}
+                                    sx={{
+                                        position: "absolute",
+                                        top: 0,
+                                        right: 0,
+                                        zIndex: 1,
+                                        backgroundColor: "transparent",
+                                        width: 100,
+                                        height: 100
+                                    }}
+                                />
                                 <Typography variant="h4">{experience.company}</Typography>
                                 <Typography variant="body1">{experience.title}</Typography>
                                 <Typography variant="body1">{experience.date}</Typography>
                                 <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>{experience.description}</Typography>
-
                             </CardContent>
                         </Card>
                     ))}
