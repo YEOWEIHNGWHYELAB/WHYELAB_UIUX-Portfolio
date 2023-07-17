@@ -36,6 +36,38 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
                         border: "white 3px solid",
                     }}
                 >
+                    <Typography variant="h4">Simple Location Tracker</Typography>
+                    <IconButton 
+                        href="https://github.com/YEOWEIHNGWHYELAB/Location-Getter" 
+                        target="_blank"
+                    >
+                        <GitHub />
+                    </IconButton>
+                    <Typography variant="body1">
+                        Technologies used: ExpressJS, HTML & CSS, JWT, PostgreSQL
+                    </Typography>
+                    <br/>
+                    <Typography variant="body1">
+                        A full stack application that allows user to track their locations. Users simply need to create an account and once they are logged in, they 
+                        can start tracking their location by clicking start. The tracker will save the user's GPS sensor location based on an interval of 10 second 
+                        and the location will be saved into the database.
+                    </Typography>
+                </CardContent>
+            </Card>
+
+            <br/>
+
+            <Card
+                style={{
+                    backgroundColor: "#c2c2c2"
+                }}
+            >
+                <CardContent
+                    style={{ 
+                        backgroundColor: getRandomDarkColor(),
+                        border: "white 3px solid",
+                    }}
+                >
                     <Typography variant="h4">Game Stat Tracker</Typography>
                     <IconButton 
                         href="https://github.com/YEOWEIHNGWHYELAB/GameStatTracker" 
@@ -50,6 +82,69 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
                     <Typography variant="body1">
                         A full stack application that allows users to track their game statistics. Users can create an account, add games, and add game session 
                         data such as the score of the game. The application also allows the user to view their games played in the form of a pie chart.
+                    </Typography>
+                </CardContent>
+            </Card>
+
+            <br/>
+
+            <Card
+                style={{
+                    backgroundColor: "#c2c2c2"
+                }}
+            >
+                <CardContent
+                    style={{ 
+                        backgroundColor: getRandomDarkColor(),
+                        border: "white 3px solid",
+                    }}
+                >
+                    <Typography variant="h4">To Do Tracker</Typography>
+                    <IconButton 
+                        href="https://github.com/YEOWEIHNGWHYELAB/ToDoTracker" 
+                        target="_blank"
+                    >
+                        <GitHub />
+                    </IconButton>
+                    <Typography variant="body1">
+                        Technologies used: Django, PostgreSQL, ReactJS
+                    </Typography>
+                    <br/>
+                    <Typography variant="body1">
+                        A full stack to do task manager that allows user to track the task they have. Users can perform CRUD operation on the tasks they have and 
+                        also create new categories associated with each task. The application also allows the user to view their tasks in the form of a pie chart. 
+                    </Typography>
+                </CardContent>
+            </Card>
+
+            <br/>
+
+            <Card
+                style={{
+                    backgroundColor: "#c2c2c2"
+                }}
+            >
+                <CardContent
+                    style={{ 
+                        backgroundColor: getRandomDarkColor(),
+                        border: "white 3px solid",
+                    }}
+                >
+                    <Typography variant="h4">Flappy Bird Get Rekt</Typography>
+                    <IconButton 
+                        href="https://github.com/YEOWEIHNGWHYELAB/Flappy-Bird-Get-Rekt" 
+                        target="_blank"
+                    >
+                        <GitHub />
+                    </IconButton>
+                    <Typography variant="body1">
+                        Technologies used: Matplotlib, PyGame, PyTorch
+                    </Typography>
+                    <br/>
+                    <Typography variant="body1">
+                        A scuffed flappy bird clone that uses a reinforcement learning with experience replay algorithm to learn how to play the game. Players can first
+                        train their neural network to play the game and once they are satisfied, they can then save the neural network and use it for future gameplay. Highest 
+                        score obtained: 5117. 
                     </Typography>
                 </CardContent>
             </Card>
@@ -92,7 +187,7 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
                         </Link>
                     </IconButton>
                     <Typography variant="body1">
-                        Technologies used: PyGame, PyTorch
+                        Technologies used: Matplotlib, PyGame, PyTorch
                     </Typography>
                     <br/>
                     <Typography variant="body1">
