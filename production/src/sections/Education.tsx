@@ -1,5 +1,9 @@
 import React, { forwardRef, useEffect, useState } from "react";
-import { Box, Typography, Card, CardContent } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
+
+import nusLogo from "../images/nus-logo.png";
+import asuLogo from "../images/asu-logo.png";
+import tpjcLogo from "../images/tpjc-logo.png";
 
 const Education = forwardRef<HTMLDivElement>((props, ref) => {
     const [showAnimation, setShowAnimation] = useState(false);
@@ -24,16 +28,19 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
             school: "National University of Singapore",
             description: "Bachelor of Engineering (Computer Engineering)",
             date: "August 2020 - May 2024",
+            logo: nusLogo
         },
         {
             school: "Arizona State University",
             description: "Student Exchange (Computer Science)",
             date: "August 2022 - December 2022",
+            logo: asuLogo
         },
         {
             school: "Tampines Junior College",
             description: "GCE A Levels",
             date: "February 2016 - November 2017",
+            logo: tpjcLogo
         },
     ];
 
@@ -59,9 +66,23 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
                             }}
                         >
                             <CardContent>
-                                <Typography variant="h4">{education.school}</Typography>
-                                <Typography variant="body1">{education.date}</Typography>
-                                <Typography variant="body1">{education.description}</Typography>
+                                <Box sx={{ display: "flex", alignItems: "center" }}>
+                                <Box sx={{ flexGrow: 1 }}>
+                                    <Typography variant="h4">{education.school}</Typography>
+                                    <Typography variant="body1">{education.date}</Typography>
+                                    <Typography variant="body1">{education.description}</Typography>
+                                </Box>
+                                <CardMedia
+                                    component="img"
+                                    src={education.logo}
+                                    alt={education.school}
+                                    sx={{ 
+                                        maxHeight: 64,
+                                        maxWidth: 64,
+                                        objectFit: "contain"
+                                    }}
+                                />
+                                </Box>
                             </CardContent>
                         </Card>
                     ))}
