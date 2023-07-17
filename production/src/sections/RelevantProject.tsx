@@ -1,12 +1,12 @@
-import React, { forwardRef } from 'react';
-import { Box, Card, CardContent, IconButton, Link, Typography  } from '@mui/material';
-import { GitHub } from '@mui/icons-material';
+import React, { forwardRef } from "react";
+import { Box, Card, CardContent, IconButton, Link, Typography  } from "@mui/material";
+import { GitHub } from "@mui/icons-material";
 
-import DevPostIcon from '../images/devpost-logo.png';
+import DevPostIcon from "../images/devpost-logo.png";
 
 function getRandomDarkColor() {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
+    const letters = "0123456789ABCDEF";
+    let color = "#";
 
     for (let i = 0; i < 3; i++) {
         color += letters[Math.floor(Math.random() * 5)];
@@ -27,13 +27,13 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
 
             <Card
                 style={{
-                    backgroundColor: '#c2c2c2'
+                    backgroundColor: "#c2c2c2"
                 }}
             >
                 <CardContent
                     style={{ 
                         backgroundColor: getRandomDarkColor(),
-                        border: 'white 3px solid',
+                        border: "white 3px solid",
                     }}
                 >
                     <Typography variant="h4">Game Stat Tracker</Typography>
@@ -58,13 +58,13 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
 
             <Card
                 style={{
-                    backgroundColor: '#c2c2c2'
+                    backgroundColor: "#c2c2c2"
                 }}
             >
                 <CardContent
                     style={{ 
                         backgroundColor: getRandomDarkColor(),
-                        border: 'white 3px solid',
+                        border: "white 3px solid",
                     }}
                 >
                     <Typography variant="h4">2D Self Driving Car Game</Typography>
@@ -78,16 +78,16 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
                         href="https://devpost.com/software/2d-self-driving-car"
                         target="_blank"
                         style={{
-                            borderRadius: '50%',
-                            width: '40px',
-                            height: '40px',
+                            borderRadius: "50%",
+                            width: "40px",
+                            height: "40px",
                          }}
                     >
                         <Link color="inherit" underline="none">
                             <img
                                 src={DevPostIcon}
                                 alt="DevPost"
-                                style={{ width: '24px', height: '24px', verticalAlign: 'middle' }}
+                                style={{ width: "24px", height: "24px", verticalAlign: "middle" }}
                             />
                         </Link>
                     </IconButton>

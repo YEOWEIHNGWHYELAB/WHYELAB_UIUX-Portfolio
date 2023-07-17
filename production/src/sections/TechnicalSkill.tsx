@@ -1,23 +1,23 @@
-import React, { forwardRef } from 'react';
-import { Box, Typography, Grid, LinearProgress } from '@mui/material';
+import React, { forwardRef } from "react";
+import { Box, Typography, Grid, LinearProgress } from "@mui/material";
 
 const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
     const technicalSkills = [
-        { name: 'C++', percentage: 70 },
-        { name: 'Java', percentage: 90 },
-        { name: 'Python', percentage: 80 },
-        { name: 'HTML & CSS', percentage: 65 },
-        { name: 'SQL', percentage: 90 },
-        { name: 'Java Script', percentage: 80 },
-        { name: 'ExpressJS', percentage: 90 },
-        { name: 'ASP.NET', percentage: 75 },
-        { name: 'Django', percentage: 70 },
-        { name: 'PostgreSQL', percentage: 90 },
-        { name: 'MySQL', percentage: 70 },
-        { name: 'MongoDB', percentage: 80 },
-        { name: 'Neo4j', percentage: 70 },
-        { name: 'Carla Simulator', percentage: 60 },
-        { name: 'PyTorch', percentage: 50 },
+        { name: "C++", percentage: 70 },
+        { name: "Java", percentage: 90 },
+        { name: "Python", percentage: 80 },
+        { name: "HTML & CSS", percentage: 65 },
+        { name: "SQL", percentage: 90 },
+        { name: "Java Script", percentage: 80 },
+        { name: "ExpressJS", percentage: 90 },
+        { name: "ASP.NET", percentage: 75 },
+        { name: "Django", percentage: 70 },
+        { name: "PostgreSQL", percentage: 90 },
+        { name: "MySQL", percentage: 70 },
+        { name: "MongoDB", percentage: 80 },
+        { name: "Neo4j", percentage: 70 },
+        { name: "Carla Simulator", percentage: 60 },
+        { name: "PyTorch", percentage: 50 },
     ];
 
     return (
@@ -31,11 +31,11 @@ const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
                     <Grid item xs={12} sm={6} md={4} key={skill.name}>
                     <Box
                         sx={{
-                            backgroundColor: 'green',
+                            backgroundColor: "green",
                             p: 2,
                             borderRadius: 8,
-                            textAlign: 'center',
-                            color: 'white',
+                            textAlign: "center",
+                            color: "white",
                         }}
                     >
                         <Typography variant="h6">{skill.name}</Typography>
@@ -44,9 +44,9 @@ const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
                             variant="determinate"
                             value={skill.percentage}
                             sx={{
-                                backgroundColor: 'grey',
-                                '& .MuiLinearProgress-bar': {
-                                    backgroundColor: 'blue'
+                                backgroundColor: "grey",
+                                "& .MuiLinearProgress-bar": {
+                                    backgroundColor: "blue"
                                 }
                             }}
                         />

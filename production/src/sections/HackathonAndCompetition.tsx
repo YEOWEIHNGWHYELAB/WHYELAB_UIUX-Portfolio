@@ -1,10 +1,10 @@
-import React, { forwardRef, useEffect } from 'react';
-import { Box, Card, CardContent, IconButton, Link, Typography } from '@mui/material';
-import { GitHub } from '@mui/icons-material';
+import React, { forwardRef, useEffect } from "react";
+import { Box, Card, CardContent, IconButton, Link, Typography } from "@mui/material";
+import { GitHub } from "@mui/icons-material";
 
-import ItchIOIcon from '../images/itchio-logo.png';
-import DevPostIcon from '../images/devpost-logo.png';
-import '../styling/HackathonAndCompetition.css';
+import ItchIOIcon from "../images/itchio-logo.png";
+import DevPostIcon from "../images/devpost-logo.png";
+import "../styling/HackathonAndCompetition.css";
 
 const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     const hackathons = [
@@ -35,7 +35,7 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
             `
         },
         { 
-            title: 'NUSGDG Gamecraft 2021 (3rd Place Winner 🎉)',
+            title: "NUSGDG Gamecraft 2021 (3rd Place Winner 🎉)",
             projectname: "VooDoo Supremacy",
             githubUrl: "https://github.com/YEOWEIHNGWHYELAB/NUSGDG-GameCraft2021.git",
             itchioUrl: "https://whyelab.itch.io/voodoo-supremacist",
@@ -50,7 +50,7 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     ];
 
     useEffect(() => {
-        const listItems = document.querySelectorAll('.list-component');
+        const listItems = document.querySelectorAll(".list-component");
 
         const handleScroll = () => {
             for (let i = 0; i < listItems.length; i++) {
@@ -59,22 +59,22 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
                 const windowHeight = window.innerHeight;
 
                 if (listItemPosition < windowHeight * 0.9) {
-                    listItem.classList.add('fly-in'); // Add fly-in animation class
+                    listItem.classList.add("fly-in"); // Add fly-in animation class
                 }
             }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
     return (
         <div ref={ref}>
             <Box id="hackathonncompetition-section" className="hackathon-section">
-                <Typography variant="h3" color="primary" sx={{ marginBottom: '1rem' }}>
+                <Typography variant="h3" color="primary" sx={{ marginBottom: "1rem" }}>
                     Hackathons & Competitions
                 </Typography>
 
@@ -82,13 +82,13 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
                     <Card
                         key={index}
                         sx={{
-                            marginBottom: '1rem',
+                            marginBottom: "1rem",
                         }}
                     >
                         <CardContent 
                             className="list-component"
                             style={{ 
-                                border: 'white 3px solid'
+                                border: "white 3px solid"
                             }}
                         >
                             <Typography variant="h4">{event.title}</Typography>
@@ -104,16 +104,16 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
                                     href={event.devpostUrl} 
                                     target="_blank"
                                     style={{
-                                        borderRadius: '50%',
-                                        width: '40px',
-                                        height: '40px',
+                                        borderRadius: "50%",
+                                        width: "40px",
+                                        height: "40px",
                                      }}
                                 >
                                     <Link color="inherit" underline="none">
                                         <img
                                             src={DevPostIcon}
                                             alt="DevPost"
-                                            style={{ width: '24px', height: '24px', verticalAlign: 'middle' }}
+                                            style={{ width: "24px", height: "24px", verticalAlign: "middle" }}
                                         />
                                     </Link>
                                 </IconButton>
@@ -124,16 +124,16 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
                                     href={event.itchioUrl}
                                     target="_blank"
                                     style={{
-                                        borderRadius: '50%',
-                                        width: '40px',
-                                        height: '40px',
+                                        borderRadius: "50%",
+                                        width: "40px",
+                                        height: "40px",
                                      }}
                                 >
                                     <Link color="inherit" underline="none">
                                         <img
                                             src={ItchIOIcon}
                                             alt="ItchIO"
-                                            style={{ width: '24px', height: '24px', verticalAlign: 'middle' }}
+                                            style={{ width: "24px", height: "24px", verticalAlign: "middle" }}
                                         />
                                     </Link>
                                 </IconButton>
@@ -145,7 +145,7 @@ const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
                                 Technologies used: {event.technologiesUsed}
                             </Typography>
 
-                            <Typography variant="body2" style={{ whiteSpace: 'pre-line' }}>{event.description}</Typography>
+                            <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>{event.description}</Typography>
                         </CardContent>
                     </Card>
                 ))}

@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import theme from './styling/GlobalTheme';
+import React, { useRef } from "react";
+import theme from "./styling/GlobalTheme";
 import {
   Box,
   Container,
@@ -7,14 +7,14 @@ import {
   Button,
   Stack,
   ThemeProvider,
-} from '@mui/material';
+} from "@mui/material";
 
-import AboutMeSection from './sections/AboutMe';
-import EducationSection from './sections/Education';
-import TechnicalSkillSection from './sections/TechnicalSkill';
-import WorkExperienceSection from './sections/WorkExperience';
-import HackathonAndCompetitionSection from './sections/HackathonAndCompetition';
-import RelevantProjectSection from './sections/RelevantProject';
+import AboutMeSection from "./sections/AboutMe";
+import EducationSection from "./sections/Education";
+import TechnicalSkillSection from "./sections/TechnicalSkill";
+import WorkExperienceSection from "./sections/WorkExperience";
+import HackathonAndCompetitionSection from "./sections/HackathonAndCompetition";
+import RelevantProjectSection from "./sections/RelevantProject";
 
 const App: React.FC = () => {
     const aboutMeRef = useRef<HTMLDivElement>(null);
@@ -60,8 +60,8 @@ const App: React.FC = () => {
                                 style={{
                                     color: "#fff"
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#00FFb4'}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#00FFb4"}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 About Me
                             </Button>
@@ -70,8 +70,8 @@ const App: React.FC = () => {
                                 style={{
                                     color: "#fff"
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff69b4'}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff69b4"}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Education
                             </Button>
@@ -80,8 +80,8 @@ const App: React.FC = () => {
                                 style={{
                                     color: "#fff"
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#3069b0'}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#3069b0"}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Work Experience
                             </Button>
@@ -90,8 +90,8 @@ const App: React.FC = () => {
                                 style={{
                                     color: "#fff"
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff624b'}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff624b"}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Hackathons and Competitions
                             </Button>
@@ -100,8 +100,8 @@ const App: React.FC = () => {
                                 style={{
                                     color: "#fff"
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0069b4'}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#0069b4"}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Relevant Projects
                             </Button>
@@ -110,8 +110,8 @@ const App: React.FC = () => {
                                 style={{
                                     color: "#fff"
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#ff00b4'}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff00b4"}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Technical Skills
                             </Button>
@@ -145,11 +145,11 @@ const App: React.FC = () => {
                 width="100%"
                 height={64}
                 sx={{ 
-                    backgroundColor: '#2196f3',
-                    color: '#fff',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center'
+                    backgroundColor: "#2196f3",
+                    color: "#fff",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
                 }} 
             >
                 <footer> 
