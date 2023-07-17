@@ -1,18 +1,24 @@
 {
   "files": {
     "main.css": "/WHYELAB_UIUX-Portfolio/static/css/main.604c43c7.css",
-    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.943530bc.js",
+    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.67dcdce6.js",
     "static/js/787.ec81ae8c.chunk.js": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js",
+    "static/media/rsaf-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/rsaf-logo.fa358e12b12e10aad5fb.png",
+    "static/media/nus-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/nus-logo.c07690eb252473d459db.png",
+    "static/media/asu-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/asu-logo.c82b1f69dd99da082476.png",
     "static/media/itchio-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/itchio-logo.5099b9c5a83b2a0b387c.png",
     "static/media/profile.jpg": "/WHYELAB_UIUX-Portfolio/static/media/profile.fe224545d4392144cefe.jpg",
+    "static/media/geomotion-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/geomotion-logo.6a7c5f6c7a22c910114e.png",
     "static/media/devpost-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/devpost-logo.c83ab1258c4084d0a17c.png",
+    "static/media/generic-company-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/generic-company-logo.50eede636068582bf97a.png",
+    "static/media/anacle-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/anacle-logo.a6265f9de349f9fc038d.png",
     "index.html": "/WHYELAB_UIUX-Portfolio/index.html",
     "main.604c43c7.css.map": "/WHYELAB_UIUX-Portfolio/static/css/main.604c43c7.css.map",
-    "main.943530bc.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.943530bc.js.map",
+    "main.67dcdce6.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.67dcdce6.js.map",
     "787.ec81ae8c.chunk.js.map": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.604c43c7.css",
-    "static/js/main.943530bc.js"
+    "static/js/main.67dcdce6.js"
   ]
 }
