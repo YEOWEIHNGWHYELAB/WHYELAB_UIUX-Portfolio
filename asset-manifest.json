@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WHYELAB_UIUX-Portfolio/static/css/main.604c43c7.css",
-    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.67dcdce6.js",
+    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.a0479537.js",
     "static/js/787.ec81ae8c.chunk.js": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js",
     "static/media/rsaf-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/rsaf-logo.fa358e12b12e10aad5fb.png",
     "static/media/nus-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/nus-logo.c07690eb252473d459db.png",
@@ -14,11 +14,11 @@
     "static/media/anacle-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/anacle-logo.a6265f9de349f9fc038d.png",
     "index.html": "/WHYELAB_UIUX-Portfolio/index.html",
     "main.604c43c7.css.map": "/WHYELAB_UIUX-Portfolio/static/css/main.604c43c7.css.map",
-    "main.67dcdce6.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.67dcdce6.js.map",
+    "main.a0479537.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.a0479537.js.map",
     "787.ec81ae8c.chunk.js.map": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.604c43c7.css",
-    "static/js/main.67dcdce6.js"
+    "static/js/main.a0479537.js"
   ]
 }
