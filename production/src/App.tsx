@@ -40,7 +40,7 @@ const App: React.FC = () => {
                 setActiveSection("Hackathons and Competitions");
             } else if (workExperienceRef.current && workExperienceRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
                 setActiveSection("Work Experience");
-            } else if (educationRef.current && educationRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
+            } else if (educationRef.current && educationRef.current.getBoundingClientRect().top - 200 <= photoOffsetHeight) {
                 setActiveSection("Education");
             } else if (aboutMeRef.current && aboutMeRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
                 setActiveSection("About Me");
@@ -87,10 +87,10 @@ const App: React.FC = () => {
                                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                                 style={{
                                     color: "#fff",
-                                    backgroundColor: (activeSection === "About Me") ? "#00FFb4" : "transparent",
+                                    backgroundColor: (activeSection === "About Me") ? "#225577" : "transparent",
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#00FFb4"}
-                                onMouseLeave={(e) => (activeSection === "About Me") ? e.currentTarget.style.backgroundColor = "#00FFb4" : e.currentTarget.style.backgroundColor = "transparent"}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#225577"}
+                                onMouseLeave={(e) => (activeSection === "About Me") ? e.currentTarget.style.backgroundColor = "#225577" : e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 About Me
                             </Button>
@@ -131,10 +131,10 @@ const App: React.FC = () => {
                                 onClick={() => scrollToSection(projectRef)}
                                 style={{
                                     color: "#fff",
-                                    backgroundColor: activeSection === "Relevant Projects" ? "#0069b4" : "transparent",
+                                    backgroundColor: activeSection === "Relevant Projects" ? "#006900" : "transparent",
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#0069b4"}
-                                onMouseLeave={(e) => (activeSection === "Relevant Projects") ? e.currentTarget.style.backgroundColor = "#0069b4" : e.currentTarget.style.backgroundColor = "transparent"}
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#006900"}
+                                onMouseLeave={(e) => (activeSection === "Relevant Projects") ? e.currentTarget.style.backgroundColor = "#006900" : e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Relevant Projects
                             </Button>
