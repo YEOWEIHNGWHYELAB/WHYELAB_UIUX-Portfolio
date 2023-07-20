@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import theme from "./styling/GlobalTheme";
 import {
   Box,
@@ -17,6 +17,8 @@ import HackathonAndCompetitionSection from "./sections/HackathonAndCompetition";
 import RelevantProjectSection from "./sections/RelevantProject";
 
 const App: React.FC = () => {
+    const [activeSection, setActiveSection] = useState<string>("");
+
     const aboutMeRef = useRef<HTMLDivElement>(null);
     const educationRef = useRef<HTMLDivElement>(null);
     const workExperienceRef = useRef<HTMLDivElement>(null);
@@ -27,6 +29,32 @@ const App: React.FC = () => {
 
     const headerHeight = 64;
     const photoOffsetHeight = headerHeight + 100;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (skillRef.current && skillRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
+                setActiveSection("Technical Skills");
+            } else if (projectRef.current && projectRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
+                setActiveSection("Relevant Projects");
+            } else if (hackathonRef.current && hackathonRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
+                setActiveSection("Hackathons and Competitions");
+            } else if (workExperienceRef.current && workExperienceRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
+                setActiveSection("Work Experience");
+            } else if (educationRef.current && educationRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
+                setActiveSection("Education");
+            } else if (aboutMeRef.current && aboutMeRef.current.getBoundingClientRect().top <= photoOffsetHeight) {
+                setActiveSection("About Me");
+            } 
+        };
+
+        // Attach the scroll event listener
+        window.addEventListener("scroll", handleScroll);
+
+        // Clean up the event listener on unmount
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [photoOffsetHeight]);
 
     const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
         if (ref.current) {
@@ -53,65 +81,65 @@ const App: React.FC = () => {
                         background: "linear-gradient(to right, #00008b, #ff69b4)"
                     }}                
                 >
-                    <header >
+                    <header>
                         <Stack direction="row" spacing={2}>
-                            <Button 
+                            <Button
                                 onClick={() => scrollToSection(aboutMeRef)}
                                 style={{
-                                    color: "#fff"
+                                    color: "#fff",
+                                    backgroundColor: activeSection === "About Me" ? "#00FFb4" : "transparent",
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#00FFb4"}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                                // ... Your existing mouseEnter and mouseLeave event handlers ...
                             >
                                 About Me
                             </Button>
-                            <Button 
+                            <Button
                                 onClick={() => scrollToSection(educationRef)}
                                 style={{
-                                    color: "#fff"
+                                    color: "#fff",
+                                    backgroundColor: activeSection === "Education" ? "#ff69b4" : "transparent",
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff69b4"}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                                // ... Your existing mouseEnter and mouseLeave event handlers ...
                             >
                                 Education
                             </Button>
-                            <Button 
+                            <Button
                                 onClick={() => scrollToSection(workExperienceRef)}
                                 style={{
-                                    color: "#fff"
+                                    color: "#fff",
+                                    backgroundColor: activeSection === "Work Experience" ? "#3069b0" : "transparent",
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#3069b0"}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                                // ... Your existing mouseEnter and mouseLeave event handlers ...
                             >
                                 Work Experience
                             </Button>
                             <Button
                                 onClick={() => scrollToSection(hackathonRef)}
                                 style={{
-                                    color: "#fff"
+                                    color: "#fff",
+                                    backgroundColor: activeSection === "Hackathons and Competitions" ? "#ff624b" : "transparent",
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff624b"}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                                // ... Your existing mouseEnter and mouseLeave event handlers ...
                             >
                                 Hackathons and Competitions
                             </Button>
-                            <Button 
+                            <Button
                                 onClick={() => scrollToSection(projectRef)}
                                 style={{
-                                    color: "#fff"
+                                    color: "#fff",
+                                    backgroundColor: activeSection === "Relevant Projects" ? "#0069b4" : "transparent",
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#0069b4"}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                                // ... Your existing mouseEnter and mouseLeave event handlers ...
                             >
                                 Relevant Projects
                             </Button>
-                            <Button 
+                            <Button
                                 onClick={() => scrollToSection(skillRef)}
                                 style={{
-                                    color: "#fff"
+                                    color: "#fff",
+                                    backgroundColor: activeSection === "Technical Skills" ? "#ff00b4" : "transparent",
                                 }}
-                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff00b4"}
-                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = "transparent"}
+                                // ... Your existing mouseEnter and mouseLeave event handlers ...
                             >
                                 Technical Skills
                             </Button>
