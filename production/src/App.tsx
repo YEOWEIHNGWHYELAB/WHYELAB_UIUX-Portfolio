@@ -17,7 +17,7 @@ import HackathonAndCompetitionSection from "./sections/HackathonAndCompetition";
 import RelevantProjectSection from "./sections/RelevantProject";
 
 const App: React.FC = () => {
-    const [activeSection, setActiveSection] = useState<string>("");
+    const [activeSection, setActiveSection] = useState<string>("About Me");
 
     const aboutMeRef = useRef<HTMLDivElement>(null);
     const educationRef = useRef<HTMLDivElement>(null);
@@ -84,7 +84,7 @@ const App: React.FC = () => {
                     <header>
                         <Stack direction="row" spacing={2}>
                             <Button
-                                onClick={() => scrollToSection(aboutMeRef)}
+                                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                                 style={{
                                     color: "#fff",
                                     backgroundColor: (activeSection === "About Me") ? "#00FFb4" : "transparent",
