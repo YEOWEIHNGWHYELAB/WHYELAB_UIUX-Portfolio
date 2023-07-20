@@ -62,7 +62,7 @@ const App: React.FC = () => {
             window.scrollTo({ top: scrollOffset, behavior: "smooth" });
         }
     };
-
+      
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
@@ -87,9 +87,10 @@ const App: React.FC = () => {
                                 onClick={() => scrollToSection(aboutMeRef)}
                                 style={{
                                     color: "#fff",
-                                    backgroundColor: activeSection === "About Me" ? "#00FFb4" : "transparent",
+                                    backgroundColor: (activeSection === "About Me") ? "#00FFb4" : "transparent",
                                 }}
-                                // ... Your existing mouseEnter and mouseLeave event handlers ...
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#00FFb4"}
+                                onMouseLeave={(e) => (activeSection === "About Me") ? e.currentTarget.style.backgroundColor = "#00FFb4" : e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 About Me
                             </Button>
@@ -99,7 +100,8 @@ const App: React.FC = () => {
                                     color: "#fff",
                                     backgroundColor: activeSection === "Education" ? "#ff69b4" : "transparent",
                                 }}
-                                // ... Your existing mouseEnter and mouseLeave event handlers ...
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff69b4"}
+                                onMouseLeave={(e) => (activeSection === "Education") ? e.currentTarget.style.backgroundColor = "#ff69b4" : e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Education
                             </Button>
@@ -109,7 +111,8 @@ const App: React.FC = () => {
                                     color: "#fff",
                                     backgroundColor: activeSection === "Work Experience" ? "#3069b0" : "transparent",
                                 }}
-                                // ... Your existing mouseEnter and mouseLeave event handlers ...
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#3069b0"}
+                                onMouseLeave={(e) => (activeSection === "Work Experience") ? e.currentTarget.style.backgroundColor = "#3069b0" : e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Work Experience
                             </Button>
@@ -119,7 +122,8 @@ const App: React.FC = () => {
                                     color: "#fff",
                                     backgroundColor: activeSection === "Hackathons and Competitions" ? "#ff624b" : "transparent",
                                 }}
-                                // ... Your existing mouseEnter and mouseLeave event handlers ...
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff624b"}
+                                onMouseLeave={(e) => (activeSection === "Hackathons and Competitions") ? e.currentTarget.style.backgroundColor = "#ff624b" : e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Hackathons and Competitions
                             </Button>
@@ -129,7 +133,8 @@ const App: React.FC = () => {
                                     color: "#fff",
                                     backgroundColor: activeSection === "Relevant Projects" ? "#0069b4" : "transparent",
                                 }}
-                                // ... Your existing mouseEnter and mouseLeave event handlers ...
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#0069b4"}
+                                onMouseLeave={(e) => (activeSection === "Relevant Projects") ? e.currentTarget.style.backgroundColor = "#0069b4" : e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Relevant Projects
                             </Button>
@@ -139,7 +144,8 @@ const App: React.FC = () => {
                                     color: "#fff",
                                     backgroundColor: activeSection === "Technical Skills" ? "#ff00b4" : "transparent",
                                 }}
-                                // ... Your existing mouseEnter and mouseLeave event handlers ...
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = "#ff00b4"}
+                                onMouseLeave={(e) => (activeSection === "Technical Skills") ? e.currentTarget.style.backgroundColor = "#ff00b4" : e.currentTarget.style.backgroundColor = "transparent"}
                             >
                                 Technical Skills
                             </Button>
