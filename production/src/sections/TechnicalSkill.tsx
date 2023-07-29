@@ -18,6 +18,9 @@ import DjangoIcon from "../images/django.jpg";
 import PostgreSQLIcon from "../images/postgresql.png";
 import MySQLIcon from "../images/mysql.svg"
 import MongoDBIcon from "../images/mongodb.png";
+import CSIcon from "../images/cs.png";
+import MatPlotLibIcon from "../images/matplotlib.png";
+import TSIcon from "../images/typescript.png";
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styling/TechnicalSkill.css';
@@ -27,10 +30,12 @@ const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
         { name: "C++", percentage: 70, icon: CPPIcon, isCustomIcon: true },
         { name: "Java", percentage: 90, iconClass: 'fab fa-java', isCustomIcon: false },
         { name: "Python", percentage: 80, icon: PythonIcon, isCustomIcon: true },
+        { name: "SQL", percentage: 90, icon: SQLIcon, isCustomIcon: true },
+        { name: "C#", percentage: 90, icon: CSIcon, isCustomIcon: true },
+        { name: "Type Script", percentage: 90, icon: TSIcon, isCustomIcon: true },
         { name: "HTML", percentage: 70, icon: HTMLIcon, isCustomIcon: true },
         { name: "Java Script", percentage: 80, icon: JSIcon, isCustomIcon: true },
         { name: "CSS", percentage: 60, icon: CSSIcon, isCustomIcon: true },
-        { name: "SQL", percentage: 90, icon: SQLIcon, isCustomIcon: true },
         { name: "ExpressJS", percentage: 90, icon: ExpressJSIcon, isCustomIcon: true },
         { name: "ASP.NET", percentage: 75, icon: ASPNETIcon, isCustomIcon: true },
         { name: "Django", percentage: 70, icon: DjangoIcon, isCustomIcon: true },
@@ -40,7 +45,8 @@ const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
         { name: "Neo4j", percentage: 70, icon: Neo4jIcon, isCustomIcon: true },
         { name: "React", percentage: 70, icon: ReactIcon, isCustomIcon: true },
         { name: "JWT", percentage: 70, icon: JWTIcon, isCustomIcon: true },
-        { name: "Carla", percentage: 60, icon: CarlaSimulatorIcon, isCustomIcon: true },
+        { name: "Matplotlib", percentage: 60, icon: MatPlotLibIcon, isCustomIcon: true },
+        { name: "Carla Simulator", percentage: 60, icon: CarlaSimulatorIcon, isCustomIcon: true },
         { name: "PyTorch", percentage: 50, icon: PyTorchIcon, isCustomIcon: true }
     ];
 
