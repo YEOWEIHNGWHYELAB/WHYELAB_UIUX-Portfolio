@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/WHYELAB_UIUX-Portfolio/static/css/main.17c09486.css",
-    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.bb1a042d.js",
+    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.8ee4c843.js",
     "static/js/787.ec81ae8c.chunk.js": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js",
     "static/media/fa-solid-900.ttf": "/WHYELAB_UIUX-Portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/matplotlib.png": "/WHYELAB_UIUX-Portfolio/static/media/matplotlib.5f12073753e864f19658.png",
     "static/media/rsaf-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/rsaf-logo.fa358e12b12e10aad5fb.png",
     "static/media/nus-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/nus-logo.c07690eb252473d459db.png",
     "static/media/react.png": "/WHYELAB_UIUX-Portfolio/static/media/react.81ed438b18e24116794d.png",
@@ -11,6 +12,7 @@
     "static/media/asu-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/asu-logo.c82b1f69dd99da082476.png",
     "static/media/python.png": "/WHYELAB_UIUX-Portfolio/static/media/python.dea924d737bb84eb9ce3.png",
     "static/media/fa-solid-900.woff2": "/WHYELAB_UIUX-Portfolio/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/cs.png": "/WHYELAB_UIUX-Portfolio/static/media/cs.dcfd7cba519fc03651fb.png",
     "static/media/itchio-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/itchio-logo.5099b9c5a83b2a0b387c.png",
     "static/media/fa-brands-400.woff2": "/WHYELAB_UIUX-Portfolio/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
     "static/media/profile.jpg": "/WHYELAB_UIUX-Portfolio/static/media/profile.fe224545d4392144cefe.jpg",
@@ -19,6 +21,7 @@
     "static/media/pytorch.png": "/WHYELAB_UIUX-Portfolio/static/media/pytorch.ced41d5ddd2fd1e5fa1a.png",
     "static/media/postgresql.png": "/WHYELAB_UIUX-Portfolio/static/media/postgresql.a7fa39912c91e079e90b.png",
     "static/media/neo4j.png": "/WHYELAB_UIUX-Portfolio/static/media/neo4j.b7ddf3e96476702b8d7f.png",
+    "static/media/typescript.png": "/WHYELAB_UIUX-Portfolio/static/media/typescript.4e3f27e6784d69f4f587.png",
     "static/media/carla-simulator.png": "/WHYELAB_UIUX-Portfolio/static/media/carla-simulator.418f553e09ffc01d0bd1.png",
     "static/media/fa-regular-400.woff2": "/WHYELAB_UIUX-Portfolio/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
     "static/media/django.jpg": "/WHYELAB_UIUX-Portfolio/static/media/django.4c399895f677cd3bfbc8.jpg",
@@ -32,16 +35,16 @@
     "static/media/css.png": "/WHYELAB_UIUX-Portfolio/static/media/css.4a6549b8c2b4cda8bb88.png",
     "static/media/anacle-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/anacle-logo.a6265f9de349f9fc038d.png",
     "static/media/fa-v4compatibility.ttf": "/WHYELAB_UIUX-Portfolio/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
-    "static/media/mysql.svg": "/WHYELAB_UIUX-Portfolio/static/media/mysql.5dbd7ffb56a921cecde426cca82f0df4.svg",
+    "static/media/mysql.svg": "/WHYELAB_UIUX-Portfolio/static/media/mysql.17e572d590819cbe5cac74acfecb45da.svg",
     "static/media/fa-v4compatibility.woff2": "/WHYELAB_UIUX-Portfolio/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "static/media/aspnet.svg": "/WHYELAB_UIUX-Portfolio/static/media/aspnet.cb6c43d550f4ed351cda9181b7cb7fd8.svg",
     "index.html": "/WHYELAB_UIUX-Portfolio/index.html",
     "main.17c09486.css.map": "/WHYELAB_UIUX-Portfolio/static/css/main.17c09486.css.map",
-    "main.bb1a042d.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.bb1a042d.js.map",
+    "main.8ee4c843.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.8ee4c843.js.map",
     "787.ec81ae8c.chunk.js.map": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17c09486.css",
-    "static/js/main.bb1a042d.js"
+    "static/js/main.8ee4c843.js"
   ]
 }
