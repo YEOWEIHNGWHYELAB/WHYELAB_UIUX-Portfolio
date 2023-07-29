@@ -169,7 +169,7 @@ const App: React.FC = () => {
                     <Box marginBottom={9}>
                         <RelevantProjectSection ref={projectRef} />
                     </Box>
-                    <Box marginBottom={9}>
+                    <Box marginBottom={20}>
                         <TechnicalSkillSection ref={skillRef} />
                     </Box>
                 </Box>
@@ -177,7 +177,7 @@ const App: React.FC = () => {
 
             <Box 
                 width="100%"
-                height={64}
+                height={96}
                 sx={{ 
                     backgroundColor: "#2196f3",
                     color: "#fff",
