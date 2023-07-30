@@ -1,9 +1,10 @@
 import React, { forwardRef } from "react";
 import { IconButton, Stack, Typography } from "@mui/material";
 import { GitHub } from "@mui/icons-material";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import ResumeIcon from "../images/resume.png";
 
 import profileImage from "../images/profile.jpg";
 
@@ -73,7 +74,7 @@ const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
                             target="_blank"
                             style={{ padding: "12px" }}
                         >
-                            <AccountBoxIcon style={{ fontSize: "4rem" }} />
+                            <img src={ResumeIcon} alt="Resume" style={{ width: "4rem", height: "4rem" }} />
                         </IconButton>
                     </Stack>
                 </div>
