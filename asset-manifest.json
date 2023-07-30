@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WHYELAB_UIUX-Portfolio/static/css/main.17c09486.css",
-    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.8ee4c843.js",
+    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.bfdf97c5.js",
     "static/js/787.ec81ae8c.chunk.js": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js",
     "static/media/fa-solid-900.ttf": "/WHYELAB_UIUX-Portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/matplotlib.png": "/WHYELAB_UIUX-Portfolio/static/media/matplotlib.5f12073753e864f19658.png",
@@ -26,6 +26,7 @@
     "static/media/fa-regular-400.woff2": "/WHYELAB_UIUX-Portfolio/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
     "static/media/django.jpg": "/WHYELAB_UIUX-Portfolio/static/media/django.4c399895f677cd3bfbc8.jpg",
     "static/media/cpp.png": "/WHYELAB_UIUX-Portfolio/static/media/cpp.24a8f93854ab092f17a7.png",
+    "static/media/resume.png": "/WHYELAB_UIUX-Portfolio/static/media/resume.4b8a236c4261ce393d0c.png",
     "static/media/sql.png": "/WHYELAB_UIUX-Portfolio/static/media/sql.d0875781b3030e385cc1.png",
     "static/media/js.png": "/WHYELAB_UIUX-Portfolio/static/media/js.57a41cb6e1dfb5a9406b.png",
     "static/media/devpost-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/devpost-logo.c83ab1258c4084d0a17c.png",
@@ -40,11 +41,11 @@
     "static/media/aspnet.svg": "/WHYELAB_UIUX-Portfolio/static/media/aspnet.cb6c43d550f4ed351cda9181b7cb7fd8.svg",
     "index.html": "/WHYELAB_UIUX-Portfolio/index.html",
     "main.17c09486.css.map": "/WHYELAB_UIUX-Portfolio/static/css/main.17c09486.css.map",
-    "main.8ee4c843.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.8ee4c843.js.map",
+    "main.bfdf97c5.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.bfdf97c5.js.map",
     "787.ec81ae8c.chunk.js.map": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17c09486.css",
-    "static/js/main.8ee4c843.js"
+    "static/js/main.bfdf97c5.js"
   ]
 }
