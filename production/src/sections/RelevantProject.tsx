@@ -17,34 +17,34 @@ function getRandomDarkColor() {
 
 const projects = [
     {
+        title: "Distributed Cloud Storage (Social Media Cloud Overlord)",
+        githubLink: "https://github.com/YEOWEIHNGWHYELAB/DistributedCloudStorage",
+        technologies: "ExpressJS, React, JWT, PostgreSQL, MongoDB, GitHub API, YouTube API",
+        description: "Full stack Google Drive clone with a file system built in to organize your files and folders. It uses social media and cloud services as a storage medium. For example, when you upload a video to our app, it will be uploaded to the platform of your choice (say YouTube), then we will store the YouTube Video ID in our database for you to retrieve the video afterwards."
+    },
+    {
         title: "Simple Location Tracker",
         githubLink: "https://github.com/YEOWEIHNGWHYELAB/Location-Getter",
         technologies: "ExpressJS, HTML & CSS, JWT, PostgreSQL",
-        description: "A full stack application that allows user to track their locations. Users simply need to create an account and once they are logged in, they can start tracking their location by clicking start. The tracker will save the user's GPS sensor location based on an interval of 10 second and the location will be saved into the database."
+        description: "Full stack application that allows user to track their locations. Users simply need to create an account and once they are logged in, they can start tracking their location by clicking start. The tracker will save the user's GPS sensor location based on an interval of 10 second and the location will be saved into the database."
     },
     {
         title: "Game Stat Tracker",
         githubLink: "https://github.com/YEOWEIHNGWHYELAB/GameStatTracker",
         technologies: "Django, PostgreSQL, ReactJS",
-        description: "A full stack application that allows users to track their game statistics. Users can create an account, add games, and add game session data such as the score of the game. The application also allows the user to view their games played in the form of a pie chart."
+        description: "Full stack application that allows users to track their game statistics. Users can create an account, add games, and add game session data such as the score of the game. The application also allows the user to view their games played in the form of a pie chart."
     },
     {
         title: "To Do Tracker",
         githubLink: "https://github.com/YEOWEIHNGWHYELAB/ToDoTracker",
         technologies: "Django, PostgreSQL, ReactJS",
-        description: "A full stack to do task manager that allows user to track the task they have. Users can perform CRUD operation on the tasks they have and also create new categories associated with each task. The application also allows the user to view their tasks in the form of a pie chart."
+        description: "Full stack to do task manager that allows user to track the task they have. Users can perform CRUD operation on the tasks they have and also create new categories associated with each task. The application also allows the user to view their tasks in the form of a pie chart."
     },
     {
         title: "Flappy Bird Get Rekt",
         githubLink: "https://github.com/YEOWEIHNGWHYELAB/Flappy-Bird-Get-Rekt",
         technologies: "Matplotlib, PyGame, PyTorch",
-        description: "A scuffed flappy bird clone that uses a reinforcement learning with experience replay algorithm to learn how to play the game. Players can first train their neural network to play the game and once they are satisfied, they can then save the neural network and use it for future gameplay. Highest score obtained: 5117."
-    },
-    {
-        title: "Flappy Bird Get Rekt",
-        githubLink: "https://github.com/YEOWEIHNGWHYELAB/Flappy-Bird-Get-Rekt",
-        technologies: "Matplotlib, PyGame, PyTorch",
-        description: "A scuffed flappy bird clone that uses a reinforcement learning with experience replay algorithm to learn how to play the game. Players can first train their neural network to play the game and once they are satisfied, they can then save the neural network and use it for future gameplay. Highest score obtained: 5117."
+        description: "Scuffed flappy bird clone that uses a reinforcement learning with experience replay algorithm to learn how to play the game. Players can first train their neural network to play the game and once they are satisfied, they can then save the neural network and use it for future gameplay. Highest score obtained: 5117."
     },
     {
         title: "2D Self Driving Car Game",

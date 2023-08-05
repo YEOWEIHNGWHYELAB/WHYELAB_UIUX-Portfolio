@@ -8,18 +8,42 @@ import "../styling/HackathonAndCompetition.css";
 
 const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     const hackathons = [
-        { 
+        {
+            title: "NTU iNTUition v9.0",
+            projectname: "NTUMODS",
+            technologiesUsed: "Django, Dockers, PostgreSQL, React",
+            githubUrl: "https://github.com/YEOWEIHNGWHYELAB/NTUMODS",
+            devpostUrl: "https://devpost.com/software/ntumods",
+            description: `
+                • Collborated with another teammate to build a full stack web application that allows students to view rooms, timetable and modules in NTU.
+                • The app allows users to filter rooms and then find one that is vacant one given a day and time range. User can also sort rooms based on the distance from their current location.
+                • Programmed the backend using Django and PostgreSQL.
+            `
+        },
+        {
             title: "NUS Hack & Roll 2023", 
             projectname: "Full Stack Multiplayer Self Driving Playground",
             technologiesUsed: "Canvas-api, ExpressJS, JWT, PostgreSQL, PyTorch, Socket.io, telegraf",
             githubUrl: "https://github.com/YEOWEIHNGWHYELAB/HackNRoll-2023", 
             devpostUrl: "https://devpost.com/software/2d-multiplayer-self-driving-playground",
             description: `
-                • Collaborated with a team of 2 members to build a full stack self-driving car game with authentication so that players can battle their AI in a multiplayer environment to see whose car is better at driving.
+                • Led a team of 2 members to build a full stack self-driving car game with authentication so that players can battle their AI in a multiplayer environment to see whose car is better at driving.
                 • Programmed the scoring system to upload the score to our backend database and then send a notification to our telebot to notify users of their score.
                 • Integrated the self-driving car game into express.js and set up authentication using JWT.
                 • Programmed the multiplayer synchronization and rooms using Socket.IO.
                 • Programmed the barebones single hidden layer neural network.
+            `
+        },
+        {
+            title: "NTU iNTUition v8.0",
+            projectname: "IPGeoGuessr",
+            technologiesUsed: "HTML, CSS, Java Script, Google Maps API",
+            githubUrl: "https://github.com/YEOWEIHNGWHYELAB/IPGeoGuessr.git",
+            devpostUrl: "https://devpost.com/software/ipgeoguessr",
+            description: `
+                • Collborated with a team of 4 to build a IP Geolocation Guessing Game.
+                • In each round, the player will be given a random IP address and they have to guess the location of the IP address on the map.
+                • The game will tell the player how far their guess is from the actual location of the IP address.
             `
         },
         { 
