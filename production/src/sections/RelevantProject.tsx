@@ -20,6 +20,7 @@ const projects = [
     {
         title: "Distributed Cloud Storage (Social Media Cloud Overlord)",
         githubLink: "https://github.com/YEOWEIHNGWHYELAB/DistributedCloudStorage",
+        devpostLink: "https://devpost.com/software/distributed-cloud-storage",
         technologies: "ExpressJS, React, JWT, PostgreSQL, MongoDB, GitHub API, YouTube API",
         description: "Full stack Google Drive clone with a file system built in to organize your files and folders. It uses social media and cloud services as a storage medium. For example, when you upload a video to our app, it will be uploaded to the platform of your choice (say YouTube), then we will store the YouTube Video ID in our database for you to retrieve the video afterwards."
     },
