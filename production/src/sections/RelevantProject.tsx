@@ -2,6 +2,7 @@ import React, { forwardRef } from "react";
 import { Box, Card, CardContent, IconButton, Link, Typography  } from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 
+import ItchIOIcon from "../images/itchio-logo.png";
 import DevPostIcon from "../images/devpost-logo.png";
 
 function getRandomDarkColor() {
@@ -41,10 +42,24 @@ const projects = [
         description: "Full stack to do task manager that allows user to track the task they have. Users can perform CRUD operation on the tasks they have and also create new categories associated with each task. The application also allows the user to view their tasks in the form of a pie chart."
     },
     {
+        title: "Escape Bros",
+        githubLink: "https://github.com/YEOWEIHNGWHYELAB/NUSGDG-EscapeBros",
+        itchioLink: "https://minheina.itch.io/escapebros",
+        technologies: "Unity",
+        description: "Multiplayer Co-op Game where 2 players have to work together to fight monster and reach the checkpoints. Players can first create their rooms, then the second character will join that room. Monsters will only start to appear if there are 2 players in the room."
+    },
+    {
         title: "Flappy Bird Get Rekt",
         githubLink: "https://github.com/YEOWEIHNGWHYELAB/Flappy-Bird-Get-Rekt",
         technologies: "Matplotlib, PyGame, PyTorch",
         description: "Scuffed flappy bird clone that uses a reinforcement learning with experience replay algorithm to learn how to play the game. Players can first train their neural network to play the game and once they are satisfied, they can then save the neural network and use it for future gameplay. Highest score obtained: 5117."
+    },
+    {
+        title: "Hungry Hippo",
+        githubLink: "https://github.com/YEOWEIHNGWHYELAB/NUSGDG-Level1-Hungry-Hippo",
+        itchioLink: "https://minheina.itch.io/hungry-hippo",
+        technologies: "Unity",
+        description: "Collaborated with a team of 8 people to built the horror game for NUS Game Development Group Level 1 Game. Players can collect batteries to power their flashlight and collect all the mandrakes before returning back to the safe house. However, there are hippos that will attack the player if the player gets too close, player can use the flash light to stun the hippos temporarily."
     },
     {
         title: "2D Self Driving Car Game",
@@ -108,6 +123,26 @@ const RelevantProject = forwardRef<HTMLDivElement>((props, ref) => {
                                         </Link>
                                     </IconButton>
                                 }
+
+                                {project.itchioLink && (
+                                    <IconButton 
+                                        href={project.itchioLink}
+                                        target="_blank"
+                                        style={{
+                                            borderRadius: "50%",
+                                            width: "40px",
+                                            height: "40px",
+                                        }}
+                                    >
+                                        <Link color="inherit" underline="none">
+                                            <img
+                                                src={ItchIOIcon}
+                                                alt="ItchIO"
+                                                style={{ width: "24px", height: "24px", verticalAlign: "middle" }}
+                                            />
+                                        </Link>
+                                    </IconButton>
+                                )}
 
                                 <Typography variant="body1">
                                     Technologies used: {project.technologies}
