@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WHYELAB_UIUX-Portfolio/static/css/main.17c09486.css",
-    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.f1cdb82c.js",
+    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.43083244.js",
     "static/js/787.ec81ae8c.chunk.js": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js",
     "static/media/fa-solid-900.ttf": "/WHYELAB_UIUX-Portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/matplotlib.png": "/WHYELAB_UIUX-Portfolio/static/media/matplotlib.5f12073753e864f19658.png",
@@ -41,11 +41,11 @@
     "static/media/aspnet.svg": "/WHYELAB_UIUX-Portfolio/static/media/aspnet.cb6c43d550f4ed351cda9181b7cb7fd8.svg",
     "index.html": "/WHYELAB_UIUX-Portfolio/index.html",
     "main.17c09486.css.map": "/WHYELAB_UIUX-Portfolio/static/css/main.17c09486.css.map",
-    "main.f1cdb82c.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.f1cdb82c.js.map",
+    "main.43083244.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.43083244.js.map",
     "787.ec81ae8c.chunk.js.map": "/WHYELAB_UIUX-Portfolio/static/js/787.ec81ae8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17c09486.css",
-    "static/js/main.f1cdb82c.js"
+    "static/js/main.43083244.js"
   ]
 }
