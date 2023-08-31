@@ -70,7 +70,7 @@ const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
                             <YouTubeIcon style={{ fontSize: "4rem" }} />
                         </IconButton>
                         <IconButton 
-                            href={"https://docs.google.com/document/d/1DSQR4uLtwMjjSeLXZhUCq2UGAH-gTtxo/edit?usp=sharing&ouid=116482923554621042379&rtpof=true&sd=true"} 
+                            href={"https://drive.google.com/file/d/1kmU9uuVyKpVWrGZn__ZlWFiMPRTDaW4r/view?usp=sharing"} 
                             target="_blank"
                             style={{ padding: "12px" }}
                         >
