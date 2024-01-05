@@ -6,6 +6,7 @@ import geomotionLogo from "../images/geomotion-logo.png";
 import recruitExpressLogo from "../images/recruit-express-logo.jpeg";
 import genericLogo from "../images/generic-company-logo.png";
 import rsafLogo from "../images/rsaf-logo.png";
+import govtechLogo from "../images/govtech-logo.gif";
 
 const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     const [showAnimation, setShowAnimation] = useState(false);
@@ -26,6 +27,15 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     }, []);
 
     const experiences = [
+        {
+            company: "GovTech Singapore",
+            date: "January 2024 - June 2024",
+            title: "Software Engineer Intern",
+            description: `
+                • GovSupply and GovWallet development.
+            `,
+            logo: govtechLogo
+        },
         {
             company: "Anacle System",
             date: "January 2023 - June 2023",
