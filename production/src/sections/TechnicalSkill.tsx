@@ -21,6 +21,9 @@ import MongoDBIcon from "../images/mongodb.png";
 import CSIcon from "../images/cs.png";
 import MatPlotLibIcon from "../images/matplotlib.png";
 import TSIcon from "../images/typescript.png";
+import CypressIcon from "../images/cypress.png";
+import JestIcon from "../images/jest.png";
+import D3JSIcon from "../images/d3-js.png";
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styling/TechnicalSkill.css';
@@ -45,6 +48,9 @@ const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
         { name: "Neo4j", percentage: 70, icon: Neo4jIcon, isCustomIcon: true },
         { name: "React", percentage: 70, icon: ReactIcon, isCustomIcon: true },
         { name: "JWT", percentage: 70, icon: JWTIcon, isCustomIcon: true },
+        { name: "Cypress", percentage: 70, icon: CypressIcon, isCustomIcon: true },
+        { name: "Jest", percentage: 60, icon: JestIcon, isCustomIcon: true },
+        { name: "D3.js", percentage: 50, icon: D3JSIcon, isCustomIcon: true },
         { name: "Matplotlib", percentage: 60, icon: MatPlotLibIcon, isCustomIcon: true },
         { name: "Carla Simulator", percentage: 60, icon: CarlaSimulatorIcon, isCustomIcon: true },
         { name: "PyTorch", percentage: 50, icon: PyTorchIcon, isCustomIcon: true }

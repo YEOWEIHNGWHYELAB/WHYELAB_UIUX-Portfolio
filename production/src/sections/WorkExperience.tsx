@@ -29,17 +29,18 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     const experiences = [
         {
             company: "GovTech Singapore",
-            date: "January 2024 - June 2024",
-            title: "Software Engineer Intern",
+            date: "January 2024 - Present",
+            title: "Software Engineer Internship",
             description: `
-                • GovSupply and GovWallet development.
+                • Developed a new API and writing unit test for the GovWallet backend.
+                • Developed a new transaction history table for the GovWallet-Admin panel.
             `,
             logo: govtechLogo
         },
         {
             company: "Anacle System",
             date: "January 2023 - June 2023",
-            title: "Software Developer Intern",
+            title: "Software Developer Internship",
             description: `
                 • Acquired and familiarized with the technical skills required in developing the Simplicity enterprise system within a tight schedule of 2 weeks.
                 • Built a module for log reviews and a scheduler that triggers the reviews for the admin team to review the system log for a set time.
@@ -53,7 +54,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
         {
             company: "Geomotion (Singapore) Private Limited",
             date: "May 2022 - July 2022",
-            title: "Full Stack Developer Intern",
+            title: "Full Stack Developer Internship",
             description: `
                 • Acquired and familiarize with the technical skills required in building the enterprise system within a tight schedule of 1 week.
                 • Communicated with technical manager and geologist to understand their current workflow issues and devise ideas to incorporate into the enterprise system to improve the company’s overall efficiency in borehole data management.

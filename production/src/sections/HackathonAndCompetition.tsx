@@ -9,6 +9,21 @@ import "../styling/HackathonAndCompetition.css";
 const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     const hackathons = [
         {
+            title: "NUS Hack & Roll 2024",
+            projectname: "Graph Modelled Password Manager - Neo4PW",
+            technologiesUsed: "Neo4j, PostgreSQL, React, D3.js, ExpressJS, JWT, PostMark",
+            githubUrl: "https://github.com/YEOWEIHNGWHYELAB/HackNRoll-2024",
+            devpostUrl: "https://devpost.com/software/neo4pw",
+            description: `
+                • Led a team of 4 members to build an authenticated full stack graph based password manager using Neo4j.
+                • Credentials are modelled using relations, e.g: Gmail authenticates GitHub, so a relation will be formed from GitHub to Gmail as GitHub references the Google account's gmail.
+                • Breach analysis uses haveibeenpwned.com's API mark nodes as compromised. Then using breadth-first search on each compromised node, it warns users by sending a list of compiled compromised credentials to their email address.
+                • A csv parser is built into the app to allow users to import their credentials from their web browser's password manager export. The parser automatically creates nodes which represents each credentials and detects all relation creates them according to their reference.
+                • Chrome extension that listens to POST request is built to allow user to automatically save/update their credentials automatically by calling API to the app. The extension also allows user to autofill their credentials for a particular website's login page they are on. 
+                • Users can also manually perform CRUD operations on their credentials.
+            `
+        },
+        {
             title: "NTU iNTUition v9.0",
             projectname: "NTUMODS",
             technologiesUsed: "Django, Dockers, PostgreSQL, React",
