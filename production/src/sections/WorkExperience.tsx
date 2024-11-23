@@ -164,7 +164,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                                 <Typography variant="h4">{experience.company}</Typography>
                                 <Typography variant="body1">{experience.title}</Typography>
                                 <Typography variant="body1">{experience.date}</Typography>
-                                <Typography variant="body1">Location: {experience.location}</Typography>
+                                <Typography variant="body1">{experience.location}</Typography>
                                 <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>{experience.description}</Typography>
                             </CardContent>
                         </Card>
