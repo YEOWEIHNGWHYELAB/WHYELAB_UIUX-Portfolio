@@ -7,6 +7,7 @@ import recruitExpressLogo from "../images/recruit-express-logo.jpeg";
 import genericLogo from "../images/generic-company-logo.png";
 import rsafLogo from "../images/rsaf-logo.png";
 import govtechLogo from "../images/govtech-logo.gif";
+import tiktokLogo from "../images/tiktok-logo.png";
 
 const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     const [showAnimation, setShowAnimation] = useState(false);
@@ -28,12 +29,29 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
 
     const experiences = [
         {
+            company: "TikTok",
+            date: "July 2024 - Present",
+            title: "Software Engineer",
+            location: "Singapore",
+            description: `
+                • Merge data coming from TikTok trill & musical_ly on the BTM pipeline.
+                • Adapted the TouTiao Config Center (TCC) to allow multiple configurations to be split onto different namespace for the translator service. Previously all the configurations are stored in a single TCC which makes it hard to manage and track the configurations.
+                • Fixed the userscript responsible for enhacing the TTP log searching experience. The userscript (used with tampermonkey) was supposed to be able to enhance the log viewing experience by adding the link to the code repository where the error has been raised and display some additional logging details like the product line which the log belongs to. However, the userscript was not working as there was numerous parsing issues associated with the userscript.
+                • Develop Tempo which is a project scheduling management tool like Jira. Implemented the iteration summary logic and iteration report logic.
+                • Develop ByteDance Tracking Model (BTM) metrics that are useful for tracking the reliability and the performance of the E-commerce services.
+            `,
+            logo: tiktokLogo,
+        },
+        {
             company: "GovTech Singapore",
-            date: "January 2024 - Present",
+            date: "January 2024 - June 2024",
             title: "Software Engineer Internship",
+            location: "Singapore",
             description: `
                 • Developed a new API and writing unit test for the GovWallet backend.
                 • Developed a new transaction history table for the GovWallet-Admin panel.
+                • Created a new test suite for GovWallet landing page to ensure all external links are correct and not broken.
+                • Modified the existing QR code generator and the QR code scanner to accept the new QR code format for sally web app.
             `,
             logo: govtechLogo
         },
@@ -41,6 +59,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             company: "Anacle System",
             date: "January 2023 - June 2023",
             title: "Software Developer Internship",
+            location: "Singapore",
             description: `
                 • Acquired and familiarized with the technical skills required in developing the Simplicity enterprise system within a tight schedule of 2 weeks.
                 • Built a module for log reviews and a scheduler that triggers the reviews for the admin team to review the system log for a set time.
@@ -55,6 +74,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             company: "Geomotion (Singapore) Private Limited",
             date: "May 2022 - July 2022",
             title: "Full Stack Developer Internship",
+            location: "Singapore",
             description: `
                 • Acquired and familiarize with the technical skills required in building the enterprise system within a tight schedule of 1 week.
                 • Communicated with technical manager and geologist to understand their current workflow issues and devise ideas to incorporate into the enterprise system to improve the company’s overall efficiency in borehole data management.
@@ -67,6 +87,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             company: "Recruit Express",
             date: "June 2021 - August 2021",
             title: "Swab Test Administrator",
+            location: "Singapore",
             description: `
                 • Scanned on average of 100 documents daily of people coming for swab test and examine if patients are fit for swab test. 
                 • Communicated with patients and verified the patient’s particulars to boost the swabbing team"s efficiency.
@@ -79,6 +100,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             company: "Hup Huat Switch Board Co",
             date: "December 2019 - Jananuary 2020",
             title: "Sales Assistant",
+            location: "Singapore",
             description: `
                 • Collaborated with the shop owner to control and record orders from phone calls to ensure high accuracy of the orders that the customers placed.
                 • Actively check invoice and goods delivery to ensure that all the sale for the day tally.
@@ -92,6 +114,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             company: "Republic of Singapore Air Force (National Service)",
             date: "July 2018 - November 2019",
             title: "B Vehicle Technician",
+            location: "Singapore",
             description: `
                 • Inspected vehicle through road test with supervisors. Some tests include brake test and driving test. Ensures safety of drivers driving vehicle. Using On-Board Diagnostic to examine for fault code and clear fault code.
                 • Managed vehicle parts and vehicle status. By inspecting if vehicle faulty parts are replaced.
@@ -130,8 +153,8 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                                     src={experience.logo}
                                     sx={{
                                         position: "absolute",
-                                        top: 0,
-                                        right: 0,
+                                        top: 10,
+                                        right: 10,
                                         zIndex: 1,
                                         backgroundColor: "transparent",
                                         width: 100,
@@ -141,6 +164,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                                 <Typography variant="h4">{experience.company}</Typography>
                                 <Typography variant="body1">{experience.title}</Typography>
                                 <Typography variant="body1">{experience.date}</Typography>
+                                <Typography variant="body1">Location: {experience.location}</Typography>
                                 <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>{experience.description}</Typography>
                             </CardContent>
                         </Card>
