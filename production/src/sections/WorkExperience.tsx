@@ -168,42 +168,56 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                             }}
                         >
                             <CardContent>
-                                <Avatar
-                                    alt={experience.company}
-                                    src={experience.logo}
-                                    sx={{
-                                        position: "absolute",
-                                        top: 10,
-                                        right: 10,
-                                        zIndex: 1,
-                                        backgroundColor: "transparent",
-                                        width: 100,
-                                        height: 100
-                                    }}
-                                />
-                                <Typography variant="h4">{experience.company}</Typography>
-                                <Box display="flex" flexDirection="column" gap={0.5} mb={1}>
-                                    <Typography variant="body1">{experience.title}</Typography>
-                                    <Typography variant="body1">{experience.date}</Typography>
-                                    <Typography variant="body1">{experience.location}</Typography>
-                                    {experience.techStack?.length > 0 && (
-                                        <Box display="flex" flexWrap="wrap" gap={1} mt={1}>
-                                            {experience.techStack.map((tech, idx) => (
-                                                <Tooltip title={tech.name} key={idx}>
-                                                    <Avatar
-                                                        alt={tech.name}
-                                                        src={tech.icon}
-                                                        sx={{ width: 32, height: 32 }}
-                                                    />
-                                                </Tooltip>
-                                            ))}
-                                        </Box>
-                                    )}
-                                </Box>
-                                <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>
-                                    {experience.description}
-                                </Typography>
-                            </CardContent>
+    <Avatar
+        alt={experience.company}
+        src={experience.logo}
+        sx={{
+            position: "absolute",
+            top: 10,
+            right: 10,
+            zIndex: 1,
+            backgroundColor: "transparent",
+            width: 100,
+            height: 100
+        }}
+    />
+
+    <Typography variant="h4" gutterBottom>{experience.company}</Typography>
+
+    {/* Title + Date + Location + Tech Stack aligned in a row */}
+    <Box
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+        flexWrap="wrap"
+        sx={{ marginBottom: "1rem", gap: 1 }}
+    >
+        <Box>
+            <Typography variant="body1">{experience.title}</Typography>
+            <Typography variant="body1">{experience.date}</Typography>
+            <Typography variant="body1">{experience.location}</Typography>
+        </Box>
+
+        {/* Tech stack icons on the right */}
+        {experience.techStack?.length > 0 && (
+            <Box display="flex" gap={1} flexWrap="wrap">
+                {experience.techStack.map((tech, idx) => (
+                    <Tooltip title={tech.name} key={idx}>
+                        <Avatar
+                            alt={tech.name}
+                            src={tech.icon}
+                            sx={{ width: 32, height: 32 }}
+                        />
+                    </Tooltip>
+                ))}
+            </Box>
+        )}
+    </Box>
+
+    <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>
+        {experience.description}
+    </Typography>
+</CardContent>
                         </Card>
                     ))}
                 </div>
