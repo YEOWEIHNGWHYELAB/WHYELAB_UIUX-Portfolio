@@ -16,14 +16,17 @@ import pythonIcon from "../../images/tech/python.png";
 import csIcon from "../../images/tech/cs.png";
 import typeScriptIcon from "../../images/tech/typescript.png";
 import javaScriptIcon from "../../images/tech/js.png";
+import javaIcon from "../../images/tech/java.svg";
 import djangoIcon from "../../images/tech/django.jpg";
 import aspNetIcon from "../../images/tech/aspnet.svg";
 import mySQLIcon from "../../images/tech/mysql.png";
 import microsoftSQLIcon from "../../images/tech/microsoft-sql-server.png";
 import postgreSQLIcon from "../../images/tech/postgresql.png";
+import dynamoDBIcon from "../../images/tech/dynamodb.png";
 import apacheHiveIcon from "../../images/tech/apache-hive.png";
 import clickhouseIcon from "../../images/tech/clickhouse.svg";
 import redisIcon from "../../images/tech/redis.png";
+import cypressIcon from "../../images/tech/cypress.png";
 import reactIcon from "../../images/tech/react.png";
 import figmaIcon from "../../images/tech/figma.png";
 
@@ -128,8 +131,16 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
           src: javaScriptIcon,
         },
         {
+          name: "DynamoDB",
+          src: dynamoDBIcon,
+        },
+        {
           name: "React",
           src: reactIcon,
+        },
+        {
+          name: "Cypress",
+          src: cypressIcon,
         },
         {
           name: "Figma",
@@ -182,10 +193,14 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Deployed the enterprise system onto the Geomotion Web Server for production using Gunicorn and Nginx with SSL certificate. The enterprise system has been running smoothly since the deployment and weekly daily backup has been made and it has the potential to cut down up to 700 hours of man hours annually.
             `,
       logo: geomotionLogo,
-       techstackiconbar: [
+      techstackiconbar: [
         {
           name: "Python",
           src: pythonIcon,
+        },
+        {
+          name: "Java",
+          src: javaIcon,
         },
         {
           name: "Django",

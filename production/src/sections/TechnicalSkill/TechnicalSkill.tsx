@@ -28,7 +28,7 @@ import D3JSIcon from "../../images/tech/d3-js.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../../styling/TechnicalSkill.css";
 
-const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
+const TechnicalSkill = forwardRef<HTMLDivElement>((_, ref) => {
   const technicalSkills = [
     { name: "C++", percentage: 70, icon: CPPIcon, isCustomIcon: true },
     { name: "Java", percentage: 90, iconClass: "fab fa-java", isCustomIcon: false},
