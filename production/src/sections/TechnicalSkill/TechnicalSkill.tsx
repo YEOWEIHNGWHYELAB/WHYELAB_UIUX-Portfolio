@@ -1,32 +1,32 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { Box, Typography, Grid, LinearProgress } from "@mui/material";
 
-import CPPIcon from "../images/cpp.png";
-import PythonIcon from "../images/python.png"
-import CarlaSimulatorIcon from "../images/carla-simulator.png";
-import ReactIcon from "../images/react.png";
-import ASPNETIcon from "../images/aspnet.svg";
-import HTMLIcon from "../images/html.png";
-import CSSIcon from "../images/css.png";
-import SQLIcon from "../images/sql.png";
-import JSIcon from "../images/js.png";
-import ExpressJSIcon from "../images/expressjs.png";
-import Neo4jIcon from "../images/neo4j.png";
-import JWTIcon from "../images/jwt.png";
-import PyTorchIcon from "../images/pytorch.png";
-import DjangoIcon from "../images/django.jpg";
-import PostgreSQLIcon from "../images/postgresql.png";
-import MySQLIcon from "../images/mysql.svg"
-import MongoDBIcon from "../images/mongodb.png";
-import CSIcon from "../images/cs.png";
-import MatPlotLibIcon from "../images/matplotlib.png";
-import TSIcon from "../images/typescript.png";
-import CypressIcon from "../images/cypress.png";
-import JestIcon from "../images/jest.png";
-import D3JSIcon from "../images/d3-js.png";
+import CPPIcon from "../../images/tech/cpp.png";
+import PythonIcon from "../../images/tech/python.png"
+import CarlaSimulatorIcon from "../../images/tech/carla-simulator.png";
+import ReactIcon from "../../images/tech/react.png";
+import ASPNETIcon from "../../images/tech/aspnet.svg";
+import HTMLIcon from "../../images/tech/html.png";
+import CSSIcon from "../../images/tech/css.png";
+import SQLIcon from "../../images/tech/sql.png";
+import JSIcon from "../../images/tech/js.png";
+import ExpressJSIcon from "../../images/tech/expressjs.png";
+import Neo4jIcon from "../../images/tech/neo4j.png";
+import JWTIcon from "../../images/tech/jwt.png";
+import PyTorchIcon from "../../images/tech/pytorch.png";
+import DjangoIcon from "../../images/tech/django.jpg";
+import PostgreSQLIcon from "../../images/tech/postgresql.png";
+import MySQLIcon from "../../images/tech/mysql.svg"
+import MongoDBIcon from "../../images/tech/mongodb.png";
+import CSIcon from "../../images/tech/cs.png";
+import MatPlotLibIcon from "../../images/tech/matplotlib.png";
+import TSIcon from "../../images/tech/typescript.png";
+import CypressIcon from "../../images/tech/cypress.png";
+import JestIcon from "../../images/tech/jest.png";
+import D3JSIcon from "../../images/tech/d3-js.png";
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../styling/TechnicalSkill.css';
+import '../../styling/TechnicalSkill.css';
 
 const TechnicalSkill = forwardRef<HTMLDivElement>((props, ref) => {
     const technicalSkills = [

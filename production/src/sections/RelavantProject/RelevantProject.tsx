@@ -1,9 +1,9 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { Box, Card, CardContent, IconButton, Link, Typography  } from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 
-import ItchIOIcon from "../images/itchio-logo.png";
-import DevPostIcon from "../images/devpost-logo.png";
+import ItchIOIcon from "../../images/website/itchio-logo.png";
+import DevPostIcon from "../../images/website/devpost-logo.png";
 
 function getRandomDarkColor() {
     const letters = "0123456789ABCDEF";

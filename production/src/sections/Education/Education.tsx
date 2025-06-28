@@ -1,9 +1,9 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
-import nusLogo from "../images/nus-logo.png";
-import asuLogo from "../images/asu-logo.png";
-import tpjcLogo from "../images/tpjc-logo.png";
+import nusLogo from "../../images/school/nus-logo.png";
+import asuLogo from "../../images/school/asu-logo.png";
+import tpjcLogo from "../../images/school/tpjc-logo.png";
 
 const Education = forwardRef<HTMLDivElement>((props, ref) => {
     const [showAnimation, setShowAnimation] = useState(false);

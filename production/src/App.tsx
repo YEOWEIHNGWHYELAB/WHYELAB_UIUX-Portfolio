@@ -9,12 +9,12 @@ import {
   ThemeProvider,
 } from "@mui/material";
 
-import AboutMeSection from "./sections/AboutMe";
-import EducationSection from "./sections/Education";
-import TechnicalSkillSection from "./sections/TechnicalSkill";
-import WorkExperienceSection from "./sections/WorkExperience";
-import HackathonAndCompetitionSection from "./sections/HackathonAndCompetition";
-import RelevantProjectSection from "./sections/RelevantProject";
+import AboutMeSection from "./sections/AboutMe/AboutMe";
+import EducationSection from "./sections/Education/Education";
+import TechnicalSkillSection from "./sections/TechnicalSkill/TechnicalSkill";
+import WorkExperienceSection from "./sections/WorkExperience/WorkExperience";
+import HackathonAndCompetitionSection from "./sections/HackathonAndCompetition/HackathonAndCompetition";
+import RelevantProjectSection from "./sections/RelavantProject/RelevantProject";
 
 const App: React.FC = () => {
     const [activeSection, setActiveSection] = useState<string>("About Me");

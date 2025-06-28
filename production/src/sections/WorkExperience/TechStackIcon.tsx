@@ -1,14 +1,14 @@
 import React from "react";
 import { Box, Tooltip } from "@mui/material";
 
-type TechStackIconsProps = {
+type TechStackIconsProp = {
   icons: {
     name: string;
     src: string;
   }[];
 };
 
-const TechStackIcons: React.FC<TechStackIconsProps> = ({ icons }) => {
+const TechStackIcon: React.FC<TechStackIconsProp> = ({ icons }) => {
   return (
     <Box
       sx={{
@@ -54,4 +54,4 @@ const TechStackIcons: React.FC<TechStackIconsProps> = ({ icons }) => {
   );
 };
 
-export default TechStackIcons;
+export default TechStackIcon;

@@ -1,10 +1,10 @@
-import React, { forwardRef, useEffect } from "react";
+import { forwardRef, useEffect } from "react";
 import { Box, Card, CardContent, IconButton, Link, Typography } from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 
-import ItchIOIcon from "../images/itchio-logo.png";
-import DevPostIcon from "../images/devpost-logo.png";
-import "../styling/HackathonAndCompetition.css";
+import ItchIOIcon from "../../images/website/itchio-logo.png";
+import DevPostIcon from "../../images/website/devpost-logo.png";
+import "../../styling/HackathonAndCompetition.css";
 
 const HackathonAndCompetition = forwardRef<HTMLDivElement>((props, ref) => {
     const hackathons = [

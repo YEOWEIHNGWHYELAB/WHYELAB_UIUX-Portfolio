@@ -1,14 +1,15 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import { Avatar, Box, Typography, Card, CardContent } from "@mui/material";
 
-import anacleLogo from "../images/anacle-logo.png";
-import geomotionLogo from "../images/geomotion-logo.png";
-import recruitExpressLogo from "../images/recruit-express-logo.jpeg";
-import genericLogo from "../images/generic-company-logo.png";
-import rsafLogo from "../images/rsaf-logo.png";
-import govtechLogo from "../images/govtech-logo.gif";
-import tiktokLogo from "../images/tiktok-logo.png";
-import TechStackIcons from "./TechStackIcons";
+import anacleLogo from "../../images/company/anacle-logo.png";
+import geomotionLogo from "../../images/company/geomotion-logo.png";
+import recruitExpressLogo from "../../images/company/recruit-express-logo.jpeg";
+import genericLogo from "../../images/company/generic-company-logo.png";
+import rsafLogo from "../../images/company/rsaf-logo.png";
+import govtechLogo from "../../images/company/govtech-logo.gif";
+import tiktokLogo from "../../images/company/tiktok-logo.png";
+
+import TechStackIcon from "./TechStackIcon";
 
 const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     const [showAnimation, setShowAnimation] = useState(false);
@@ -166,10 +167,10 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                                 <Typography variant="body1">{experience.title}</Typography>
                                 <Typography variant="body1">{experience.date}</Typography>
                                 <Typography variant="body1">{experience.location}</Typography>
-                                <TechStackIcons
+                                <TechStackIcon
                                     icons={[
                                         { name: "React Native", src: "./public/images/tiktok-logo.png" },
-                                        { name: "Firebase", src: "../images/neo4j.png" },
+                                        { name: "Firebase", src: "../../images/neo4j.png" },
                                         { name: "Figma", src: tiktokLogo },
                                     ]}
                                 />

@@ -1,12 +1,12 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { IconButton, Stack, Typography } from "@mui/material";
 import { GitHub } from "@mui/icons-material";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import ResumeIcon from "../images/resume.png";
 
-import profileImage from "../images/profile.jpg";
+import ResumeIcon from "../../images/profile/resume.png";
+import profileImage from "../../images/profile/profile.jpg";
 
 const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
     return (
