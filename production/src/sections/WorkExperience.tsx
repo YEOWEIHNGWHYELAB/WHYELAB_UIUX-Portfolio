@@ -1,7 +1,6 @@
-import { forwardRef, useEffect, useState } from "react";
-import { Avatar, Box, Typography, Card, CardContent, Tooltip } from "@mui/material";
+import React, { forwardRef, useEffect, useState } from "react";
+import { Avatar, Box, Typography, Card, CardContent } from "@mui/material";
 
-// Company Logos
 import anacleLogo from "../images/anacle-logo.png";
 import geomotionLogo from "../images/geomotion-logo.png";
 import recruitExpressLogo from "../images/recruit-express-logo.jpeg";
@@ -9,17 +8,7 @@ import genericLogo from "../images/generic-company-logo.png";
 import rsafLogo from "../images/rsaf-logo.png";
 import govtechLogo from "../images/govtech-logo.gif";
 import tiktokLogo from "../images/tiktok-logo.png";
-
-// Tech Stack Logos
-import goIcon from "../images/go.png";
-import postgresIcon from "../images/postgresql.png";
-// import dockerIcon from "../images/docker.png";
-// import tampermonkeyIcon from "../images/tampermonkey.png";
-// import jiraIcon from "../images/jira.png";
-// import jsIcon from "../images/javascript.png";
-import djangoIcon from "../images/django.jpg";
-import pythonIcon from "../images/python.png";
-import reactIcon from "../images/react.png";
+import TechStackIcons from "./TechStackIcons";
 
 const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     const [showAnimation, setShowAnimation] = useState(false);
@@ -27,6 +16,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     useEffect(() => {
         const handleScroll = () => {
             const experienceSection = document.getElementById("experience-section");
+
             if (experienceSection) {
                 const rect = experienceSection.getBoundingClientRect();
                 setShowAnimation(rect.top <= window.innerHeight);
@@ -34,6 +24,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
         };
 
         window.addEventListener("scroll", handleScroll);
+
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
@@ -45,18 +36,12 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             location: "Singapore",
             description: `
                 • Merge data coming from TikTok trill & musical_ly on the BTM pipeline.
-                • Adapted the TouTiao Config Center (TCC) for better configuration management.
-                • Fixed userscript issues for TTP log viewer using Tampermonkey.
-                • Developed Tempo (a Jira-like project management tool).
-                • Built BTM metrics for E-commerce reliability and performance tracking.
+                • Adapted the TouTiao Config Center (TCC) to allow multiple configurations to be split onto different namespace for the translator service. Previously all the configurations are stored in a single TCC which makes it hard to manage and track the configurations.
+                • Fixed the userscript responsible for enhacing the TTP log searching experience. The userscript (used with tampermonkey) was supposed to be able to enhance the log viewing experience by adding the link to the code repository where the error has been raised and display some additional logging details like the product line which the log belongs to. However, the userscript was not working as there was numerous parsing issues associated with the userscript.
+                • Develop Tempo which is a project scheduling management tool like Jira. Implemented the iteration summary logic and iteration report logic.
+                • Develop ByteDance Tracking Model (BTM) metrics that are useful for tracking the reliability and the performance of the E-commerce services.
             `,
             logo: tiktokLogo,
-            techStack: [
-                { name: "Go", icon: goIcon },
-                { name: "Tampermonkey", icon: goIcon },
-                { name: "Jira", icon: goIcon },
-                { name: "PostgreSQL", icon: postgresIcon },
-            ]
         },
         {
             company: "GovTech Singapore",
@@ -64,17 +49,12 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             title: "Software Engineer Internship",
             location: "Singapore",
             description: `
-                • Developed new APIs and unit tests for GovWallet.
-                • Built a transaction history table for the admin panel.
-                • Wrote test suites for verifying landing page links.
-                • Enhanced QR code scanner and generator.
+                • Developed a new API and writing unit test for the GovWallet backend.
+                • Developed a new transaction history table for the GovWallet-Admin panel.
+                • Created a new test suite for GovWallet landing page to ensure all external links are correct and not broken.
+                • Modified the existing QR code generator and the QR code scanner to accept the new QR code format for sally web app.
             `,
-            logo: govtechLogo,
-            techStack: [
-                { name: "Go", icon: goIcon },
-                { name: "PostgreSQL", icon: postgresIcon },
-                { name: "React", icon: reactIcon },
-            ]
+            logo: govtechLogo
         },
         {
             company: "Anacle System",
@@ -82,15 +62,14 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             title: "Software Developer Internship",
             location: "Singapore",
             description: `
-                • Built log review modules and schedulers.
-                • Translated Simplicity V10.0 to Japanese.
-                • Ported legacy modules and integrated MS Graph Layout.
+                • Acquired and familiarized with the technical skills required in developing the Simplicity enterprise system within a tight schedule of 2 weeks.
+                • Built a module for log reviews and a scheduler that triggers the reviews for the admin team to review the system log for a set time.
+                • Assigned project milestones to further extend Simplicity modules for our customers’ needs.
+                • Translated the entirety of Simplicity V10.0 within 1 week to Japanese as a demo to our Japanese clients.
+                • Ported old software modules into the newer Simplicity software to maintain usability of old software on a new platform for our clients.
+                • Researched and integrated Microsoft Automatic Graph Layout to maintain compatibility with modules that use the Microsoft Workflow. This is to maintain compatibility when Microsoft Workflow Foundation gets deprecated.
             `,
-            logo: anacleLogo,
-            techStack: [
-                { name: "JavaScript", icon: goIcon },
-                { name: "PostgreSQL", icon: postgresIcon },
-            ]
+            logo: anacleLogo
         },
         {
             company: "Geomotion (Singapore) Private Limited",
@@ -98,17 +77,12 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             title: "Full Stack Developer Internship",
             location: "Singapore",
             description: `
-                • Built a full-stack enterprise system using Django & PostgreSQL.
-                • Digitized borehole data and automated AGS reports.
-                • Deployed with Gunicorn + Nginx and setup daily backups.
+                • Acquired and familiarize with the technical skills required in building the enterprise system within a tight schedule of 1 week.
+                • Communicated with technical manager and geologist to understand their current workflow issues and devise ideas to incorporate into the enterprise system to improve the company’s overall efficiency in borehole data management.
+                • Collaborated with intern colleague to develop a full stack enterprise system using Canvas API, Django, PostgreSQL that is maintainable and extensible as required by the company. The enterprise system aims to digitize all of client"s borehole data, automate generation of borehole reports, AGS data and cross-section reports.
+                • Deployed the enterprise system onto the Geomotion Web Server for production using Gunicorn and Nginx with SSL certificate. The enterprise system has been running smoothly since the deployment and weekly daily backup has been made and it has the potential to cut down up to 700 hours of man hours annually.
             `,
-            logo: geomotionLogo,
-            techStack: [
-                { name: "Django", icon: djangoIcon },
-                { name: "PostgreSQL", icon: postgresIcon },
-                { name: "Python", icon: pythonIcon },
-                { name: "Docker", icon: goIcon },
-            ]
+            logo: geomotionLogo
         },
         {
             company: "Recruit Express",
@@ -116,23 +90,26 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             title: "Swab Test Administrator",
             location: "Singapore",
             description: `
-                • Managed and scanned patient records.
-                • Communicated with patients and supported the swab team.
+                • Scanned on average of 100 documents daily of people coming for swab test and examine if patients are fit for swab test. 
+                • Communicated with patients and verified the patient’s particulars to boost the swabbing team"s efficiency.
+                • Collaborated with the swap team on ushering people to designated swab test area to maintain swabbing team"s efficiency.
+                • Managed patients coming for swab test and ensuring safe distancing of patients.
             `,
-            logo: recruitExpressLogo,
-            techStack: []
+            logo: recruitExpressLogo
         },
         {
             company: "Hup Huat Switch Board Co",
-            date: "December 2019 - January 2020",
+            date: "December 2019 - Jananuary 2020",
             title: "Sales Assistant",
             location: "Singapore",
             description: `
-                • Handled customer orders and equipment checks.
-                • Ensured delivery accuracy and assisted sales transactions.
+                • Collaborated with the shop owner to control and record orders from phone calls to ensure high accuracy of the orders that the customers placed.
+                • Actively check invoice and goods delivery to ensure that all the sale for the day tally.
+                • Performed routine check on equipment sold to ensure they are in good working condition.
+                • Collaborated with shop owner to ensure transaction goes smoothly, so customers" demand is met.
+                • Communicated with the customers to check their requirements and proposed relevant or appropriate products and explain its features and benefits.
             `,
-            logo: genericLogo,
-            techStack: []
+            logo: genericLogo
         },
         {
             company: "Republic of Singapore Air Force (National Service)",
@@ -140,98 +117,64 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             title: "B Vehicle Technician",
             location: "Singapore",
             description: `
-                • Performed diagnostics and road safety checks on military vehicles.
-                • Fixed and maintained vehicle systems and parts.
+                • Inspected vehicle through road test with supervisors. Some tests include brake test and driving test. Ensures safety of drivers driving vehicle. Using On-Board Diagnostic to examine for fault code and clear fault code.
+                • Managed vehicle parts and vehicle status. By inspecting if vehicle faulty parts are replaced.
+                • Fixed faulty equipment on vehicles by investigating fault and tracing fault to root cause of issue. Fix and replace faulty parts and check if faults are cleared.
+                • Servicing and maintaining vehicles (mileage with 40 km or 20 km) to assure vehicles are road ready. Through changing of oil, coolant, and inspection of vehicle parts.
+                • Torquing wheel nuts to ensure wheels are well secured to correct specifications.
             `,
-            logo: rsafLogo,
-            techStack: []
+            logo: rsafLogo
         }
     ];
 
     return (
         <div ref={ref}>
             <Box id="experience-section">
-                <Typography variant="h3" color="primary" sx={{ marginBottom: "1rem" }}>
-                    Work Experience
-                </Typography>
-                <div style={{ overflowX: "hidden" }}>
+                <Typography variant="h3" color="primary" sx={{ marginBottom: "1rem" }}>Work Experience</Typography>
+                <div 
+                    style={{
+                        overflowX: "hidden"
+                    }}
+                >
                     {experiences.map((experience, index) => (
                         <Card
                             key={index}
                             sx={{
                                 backgroundColor: "#002222",
                                 marginBottom: "1rem",
-                                marginLeft: showAnimation && index % 2 === 0 ? "0" : "auto",
-                                marginRight: showAnimation && index % 2 === 1 ? "0" : "auto",
-                                transform: showAnimation ? "translateX(0)" : `translateX(${index % 2 === 0 ? "-100%" : "100%"})`,
+                                marginLeft: showAnimation && index % 2 === 0 ? "0" : "auto", // Align left for even indices
+                                marginRight: showAnimation && index % 2 === 1 ? "0" : "auto", // Align right for odd indices
+                                transform: showAnimation ? "translateX(0)" : `translateX(${index % 2 === 0 ? "-100%" : "100%"})`, // Slide in from left/right
                                 transition: "transform 0.5s ease",
                             }}
                         >
-                            <CardContent sx={{ position: "relative", height: "100%" }}>
-    <Avatar
-        alt={experience.company}
-        src={experience.logo}
-        sx={{
-            position: "absolute",
-            top: 10,
-            right: 10,
-            zIndex: 1,
-            backgroundColor: "transparent",
-            width: 100,
-            height: 100
-        }}
-    />
-
-    <Typography variant="h4" gutterBottom>{experience.company}</Typography>
-
-    {/* Title + Date + Location + TechStack all in one row, centered vertically */}
-    <Box
-        sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: 2,
-            mb: 2,
-        }}
-    >
-       {/* Title + Date + Location */}
-<Box sx={{ mb: 2 }}>
-    <Typography variant="body1">{experience.title}</Typography>
-    <Typography variant="body1">{experience.date}</Typography>
-    <Typography variant="body1">{experience.location}</Typography>
-</Box>
-
-{/* Centered Tech Stack Icons */}
-{experience.techStack?.length > 0 && (
-    <Box
-        sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: 1,
-            flexWrap: "wrap",
-            mb: 2,
-            width: "100%",
-        }}
-    >
-        {experience.techStack.map((tech, idx) => (
-            <Tooltip title={tech.name} key={idx}>
-                <Avatar
-                    alt={tech.name}
-                    src={tech.icon}
-                    sx={{ width: 32, height: 32 }}
-                />
-            </Tooltip>
-        ))}
-    </Box>
-)}
-    </Box>
-
-    {/* Description stays full width below */}
-    <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>
-        {experience.description}
-    </Typography>
-</CardContent>
-
+                            <CardContent>
+                                <Avatar
+                                    alt={experience.company}
+                                    src={experience.logo}
+                                    sx={{
+                                        position: "absolute",
+                                        top: 10,
+                                        right: 10,
+                                        zIndex: 1,
+                                        backgroundColor: "transparent",
+                                        width: 100,
+                                        height: 100
+                                    }}
+                                />
+                                <Typography variant="h4">{experience.company}</Typography>
+                                <Typography variant="body1">{experience.title}</Typography>
+                                <Typography variant="body1">{experience.date}</Typography>
+                                <Typography variant="body1">{experience.location}</Typography>
+                                <TechStackIcons
+                                    icons={[
+                                        { name: "React Native", src: "./public/images/tiktok-logo.png" },
+                                        { name: "Firebase", src: "../images/neo4j.png" },
+                                        { name: "Figma", src: tiktokLogo },
+                                    ]}
+                                />
+                                <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>{experience.description}</Typography>
+                            </CardContent>
                         </Card>
                     ))}
                 </div>
