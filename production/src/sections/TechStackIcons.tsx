@@ -19,7 +19,7 @@ const TechStackIcons: React.FC<TechStackIconsProps> = ({ icons }) => {
         mt: 2,
         p: 2,
         borderRadius: 2,
-        bgcolor: "#f0f0f0",
+        bgcolor: "#808080",
         boxShadow: 2,
         scrollbarWidth: "thin", // for Firefox
         "&::-webkit-scrollbar": {
