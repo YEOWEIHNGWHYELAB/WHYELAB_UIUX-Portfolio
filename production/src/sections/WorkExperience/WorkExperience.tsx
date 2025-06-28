@@ -27,6 +27,7 @@ import apacheHiveIcon from "../../images/tech/apache-hive.png";
 import clickhouseIcon from "../../images/tech/clickhouse.svg";
 import redisIcon from "../../images/tech/redis.png";
 import cypressIcon from "../../images/tech/cypress.png";
+import jestIcon from "../../images/tech/jest.png";
 import reactIcon from "../../images/tech/react.png";
 import figmaIcon from "../../images/tech/figma.png";
 
@@ -141,6 +142,10 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
         {
           name: "Cypress",
           src: cypressIcon,
+        },
+        {
+          name: "Jest",
+          src: jestIcon,
         },
         {
           name: "Figma",
