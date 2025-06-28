@@ -11,14 +11,25 @@ type TechStackIconsProps = {
 const TechStackIcons: React.FC<TechStackIconsProps> = ({ icons }) => {
   return (
     <Box
-      display="flex"
-      flexWrap="wrap"
-      gap={2}
-      mt={2}
-      p={2}
-      borderRadius={2}
-      bgcolor="#f0f0f0"
-      boxShadow={2}
+      sx={{
+        display: "flex",
+        overflowX: "auto", // 👈 Enable horizontal scroll
+        whiteSpace: "nowrap", // 👈 Prevent wrapping
+        gap: 2,
+        mt: 2,
+        p: 2,
+        borderRadius: 2,
+        bgcolor: "#f0f0f0",
+        boxShadow: 2,
+        scrollbarWidth: "thin", // for Firefox
+        "&::-webkit-scrollbar": {
+          height: "6px",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          backgroundColor: "#ccc",
+          borderRadius: "10px",
+        },
+      }}
     >
       {icons.map((icon, index) => (
         <Tooltip title={icon.name} key={index}>
@@ -30,6 +41,7 @@ const TechStackIcons: React.FC<TechStackIconsProps> = ({ icons }) => {
               width: 40,
               height: 40,
               transition: "transform 0.3s ease",
+              display: "inline-block", // 👈 Keep it inline for horizontal scroll
               "&:hover": {
                 transform: "scale(1.3)",
                 cursor: "pointer",
