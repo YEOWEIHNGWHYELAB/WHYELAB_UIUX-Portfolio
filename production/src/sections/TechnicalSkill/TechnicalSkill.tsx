@@ -16,8 +16,8 @@ import JWTIcon from "../../images/tech/jwt.png";
 import PyTorchIcon from "../../images/tech/pytorch.png";
 import DjangoIcon from "../../images/tech/django.jpg";
 import PostgreSQLIcon from "../../images/tech/postgresql.png";
-import MySQLIcon from "../../images/tech/mysql.svg"
-import MongoDBIcon from "../../images/tech/mongodb.png";
+import MySQLIcon from "../../images/tech/mysql.png"
+import MongoDBIcon from "../../images/tech/mongodb.svg";
 import CSIcon from "../../images/tech/cs.png";
 import MatPlotLibIcon from "../../images/tech/matplotlib.png";
 import TSIcon from "../../images/tech/typescript.png";
