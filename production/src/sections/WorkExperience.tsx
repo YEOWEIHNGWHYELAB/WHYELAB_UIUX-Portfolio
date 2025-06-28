@@ -167,7 +167,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                                 transition: "transform 0.5s ease",
                             }}
                         >
-                            <CardContent>
+                            <CardContent sx={{ position: "relative", height: "100%" }}>
     <Avatar
         alt={experience.company}
         src={experience.logo}
@@ -184,21 +184,23 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
 
     <Typography variant="h4" gutterBottom>{experience.company}</Typography>
 
-    {/* Title + Date + Location + Tech Stack aligned in a row */}
+    {/* Title + Date + Location + TechStack all in one row, centered vertically */}
     <Box
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-        flexWrap="wrap"
-        sx={{ marginBottom: "1rem", gap: 1 }}
+        sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 2,
+            mb: 2,
+        }}
     >
+        {/* Left Column: Title, Date, Location */}
         <Box>
             <Typography variant="body1">{experience.title}</Typography>
             <Typography variant="body1">{experience.date}</Typography>
             <Typography variant="body1">{experience.location}</Typography>
         </Box>
 
-        {/* Tech stack icons on the right */}
+        {/* Right Column: Tech Stack Icons */}
         {experience.techStack?.length > 0 && (
             <Box display="flex" gap={1} flexWrap="wrap">
                 {experience.techStack.map((tech, idx) => (
@@ -214,10 +216,12 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
         )}
     </Box>
 
+    {/* Description stays full width below */}
     <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>
         {experience.description}
     </Typography>
 </CardContent>
+
                         </Card>
                     ))}
                 </div>
