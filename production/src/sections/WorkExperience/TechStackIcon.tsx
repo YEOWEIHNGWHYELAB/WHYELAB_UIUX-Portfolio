@@ -13,15 +13,15 @@ const TechStackIcon: React.FC<TechStackIconsProp> = ({ icons }) => {
     <Box
       sx={{
         display: "flex",
-        overflowX: "auto", // 👈 Enable horizontal scroll
-        whiteSpace: "nowrap", // 👈 Prevent wrapping
+        overflowX: "auto",
+        whiteSpace: "nowrap",
         gap: 2,
         mt: 2,
         p: 2,
         borderRadius: 2,
         bgcolor: "#808080",
         boxShadow: 2,
-        scrollbarWidth: "thin", // for Firefox
+        scrollbarWidth: "thin",
         "&::-webkit-scrollbar": {
           height: "6px",
         },
@@ -41,7 +41,7 @@ const TechStackIcon: React.FC<TechStackIconsProp> = ({ icons }) => {
               width: 40,
               height: 40,
               transition: "transform 0.3s ease",
-              display: "inline-block", // 👈 Keep it inline for horizontal scroll
+              display: "inline-block",
               "&:hover": {
                 transform: "scale(1.3)",
                 cursor: "pointer",
