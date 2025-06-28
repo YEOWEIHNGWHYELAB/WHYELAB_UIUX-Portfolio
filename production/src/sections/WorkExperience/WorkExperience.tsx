@@ -9,7 +9,23 @@ import rsafLogo from "../../images/company/rsaf-logo.png";
 import govtechLogo from "../../images/company/govtech-logo.gif";
 import tiktokLogo from "../../images/company/tiktok-logo.png";
 
-import TechStackIcon from "./TechStackIcon";
+import TechStackIconBar from "./TechStackIconBar";
+
+import golangIcon from "../../images/tech/go.png";
+import pythonIcon from "../../images/tech/python.png";
+import csIcon from "../../images/tech/cs.png";
+import typeScriptIcon from "../../images/tech/typescript.png";
+import javaScriptIcon from "../../images/tech/js.png";
+import djangoIcon from "../../images/tech/django.jpg";
+import aspNetIcon from "../../images/tech/aspnet.svg";
+import mySQLIcon from "../../images/tech/mysql.png";
+import microsoftSQLIcon from "../../images/tech/microsoft-sql-server.png";
+import postgreSQLIcon from "../../images/tech/postgresql.png";
+import apacheHiveIcon from "../../images/tech/apache-hive.png";
+import clickhouseIcon from "../../images/tech/clickhouse.svg";
+import redisIcon from "../../images/tech/redis.png";
+import reactIcon from "../../images/tech/react.png";
+import figmaIcon from "../../images/tech/figma.png";
 
 const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
   const [showAnimation, setShowAnimation] = useState(false);
@@ -43,6 +59,44 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Develop ByteDance Tracking Model (BTM) metrics that are useful for tracking the reliability and the performance of the E-commerce services.
             `,
       logo: tiktokLogo,
+      techstackiconbar: [
+        {
+          name: "Golang",
+          src: golangIcon,
+        },
+        {
+          name: "Python",
+          src: pythonIcon,
+        },
+        {
+          name: "TypeScript",
+          src: typeScriptIcon,
+        },
+        {
+          name: "MySQL",
+          src: mySQLIcon,
+        },
+        {
+          name: "Apache Hive",
+          src: apacheHiveIcon,
+        },
+        {
+          name: "ClickHouse",
+          src: clickhouseIcon,
+        },
+        {
+          name: "Redis",
+          src: redisIcon,
+        },
+        {
+          name: "React",
+          src: reactIcon,
+        },
+        {
+          name: "Figma",
+          src: figmaIcon,
+        },
+      ],
     },
     {
       company: "GovTech Singapore",
@@ -56,6 +110,32 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Modified the existing QR code generator and the QR code scanner to accept the new QR code format for sally web app.
             `,
       logo: govtechLogo,
+      techstackiconbar: [
+        {
+          name: "Golang",
+          src: golangIcon,
+        },
+        {
+          name: "Python",
+          src: pythonIcon,
+        },
+        {
+          name: "TypeScript",
+          src: typeScriptIcon,
+        },
+        {
+          name: "JavaScript",
+          src: javaScriptIcon,
+        },
+        {
+          name: "React",
+          src: reactIcon,
+        },
+        {
+          name: "Figma",
+          src: figmaIcon,
+        },
+      ],
     },
     {
       company: "Anacle System",
@@ -71,6 +151,24 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Researched and integrated Microsoft Automatic Graph Layout to maintain compatibility with modules that use the Microsoft Workflow. This is to maintain compatibility when Microsoft Workflow Foundation gets deprecated.
             `,
       logo: anacleLogo,
+      techstackiconbar: [
+        {
+          name: "C#",
+          src: csIcon,
+        },
+        {
+          name: "Python",
+          src: pythonIcon,
+        },
+        {
+          name: "ASP.NET",
+          src: aspNetIcon,
+        },
+        {
+          name: "Microsoft SQL Server",
+          src: microsoftSQLIcon,
+        },
+      ],
     },
     {
       company: "Geomotion (Singapore) Private Limited",
@@ -84,6 +182,20 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 • Deployed the enterprise system onto the Geomotion Web Server for production using Gunicorn and Nginx with SSL certificate. The enterprise system has been running smoothly since the deployment and weekly daily backup has been made and it has the potential to cut down up to 700 hours of man hours annually.
             `,
       logo: geomotionLogo,
+       techstackiconbar: [
+        {
+          name: "Python",
+          src: pythonIcon,
+        },
+        {
+          name: "Django",
+          src: djangoIcon,
+        },
+        {
+          name: "PostgreSQL",
+          src: postgreSQLIcon,
+        },
+      ],
     },
     {
       company: "Recruit Express",
@@ -171,16 +283,10 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
                 <Typography variant="body1">{experience.title}</Typography>
                 <Typography variant="body1">{experience.date}</Typography>
                 <Typography variant="body1">{experience.location}</Typography>
-                <TechStackIcon
-                  icons={[
-                    {
-                      name: "React Native",
-                      src: "./public/images/tiktok-logo.png",
-                    },
-                    { name: "Firebase", src: "../../images/neo4j.png" },
-                    { name: "Figma", src: tiktokLogo },
-                  ]}
-                />
+                {experience.techstackiconbar &&
+                  experience.techstackiconbar.length > 0 && (
+                    <TechStackIconBar icons={experience.techstackiconbar} />
+                  )}
                 <Typography variant="body2" style={{ whiteSpace: "pre-line" }}>
                   {experience.description}
                 </Typography>
