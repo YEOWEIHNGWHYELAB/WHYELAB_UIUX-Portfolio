@@ -193,27 +193,37 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
             mb: 2,
         }}
     >
-        {/* Left Column: Title, Date, Location */}
-        <Box>
-            <Typography variant="body1">{experience.title}</Typography>
-            <Typography variant="body1">{experience.date}</Typography>
-            <Typography variant="body1">{experience.location}</Typography>
-        </Box>
+       {/* Title + Date + Location */}
+<Box sx={{ mb: 2 }}>
+    <Typography variant="body1">{experience.title}</Typography>
+    <Typography variant="body1">{experience.date}</Typography>
+    <Typography variant="body1">{experience.location}</Typography>
+</Box>
 
-        {/* Right Column: Tech Stack Icons */}
-        {experience.techStack?.length > 0 && (
-            <Box display="flex" gap={1} flexWrap="wrap">
-                {experience.techStack.map((tech, idx) => (
-                    <Tooltip title={tech.name} key={idx}>
-                        <Avatar
-                            alt={tech.name}
-                            src={tech.icon}
-                            sx={{ width: 32, height: 32 }}
-                        />
-                    </Tooltip>
-                ))}
-            </Box>
-        )}
+{/* Centered Tech Stack Icons */}
+{experience.techStack?.length > 0 && (
+    <Box
+        sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 1,
+            flexWrap: "wrap",
+            mb: 2,
+            width: "100%",
+        }}
+    >
+        {experience.techStack.map((tech, idx) => (
+            <Tooltip title={tech.name} key={idx}>
+                <Avatar
+                    alt={tech.name}
+                    src={tech.icon}
+                    sx={{ width: 32, height: 32 }}
+                />
+            </Tooltip>
+        ))}
+    </Box>
+)}
     </Box>
 
     {/* Description stays full width below */}
