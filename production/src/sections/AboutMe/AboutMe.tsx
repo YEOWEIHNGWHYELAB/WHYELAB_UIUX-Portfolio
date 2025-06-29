@@ -35,8 +35,9 @@ const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
         </Typography>
 
         <Typography variant="body1">
-          I am <span style={{ color: "red" }}>YEO WEI HNG</span>, a final year
-          Computer Engineering Undergraduate @NUS
+          I'm <span style={{ color: "red" }}>WEI HNG</span>, a Backend Engineer @TikTok, 
+          passionate about building scalable & efficient systems. Graduated with 
+          a degree in Computer Engineering @NUS.
         </Typography>
         <Typography variant="body1" display={"flex"} justifyContent={"center"}>
           +65 9621 4659 | whyyeo@u.nus.edu
