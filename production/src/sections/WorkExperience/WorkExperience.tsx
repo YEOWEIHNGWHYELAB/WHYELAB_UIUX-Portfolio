@@ -77,6 +77,10 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
           src: typeScriptIcon,
         },
         {
+          name: "Java",
+          src: javaIcon,
+        },
+        {
           name: "MySQL",
           src: mySQLIcon,
         },
