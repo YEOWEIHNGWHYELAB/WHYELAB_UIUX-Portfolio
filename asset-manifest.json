@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WHYELAB_UIUX-Portfolio/static/css/main.ee90a00f.css",
-    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.1055501f.js",
+    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.2257666c.js",
     "static/js/787.57e50c62.chunk.js": "/WHYELAB_UIUX-Portfolio/static/js/787.57e50c62.chunk.js",
     "static/media/govtech-logo.gif": "/WHYELAB_UIUX-Portfolio/static/media/govtech-logo.e5a33fdc6ed8c6ef8497.gif",
     "static/media/fa-solid-900.ttf": "/WHYELAB_UIUX-Portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
@@ -55,11 +55,11 @@
     "index.html": "/WHYELAB_UIUX-Portfolio/index.html",
     "static/media/clickhouse.svg": "/WHYELAB_UIUX-Portfolio/static/media/clickhouse.57b884c9a1785bb3cb13d4e4a34d39d9.svg",
     "main.ee90a00f.css.map": "/WHYELAB_UIUX-Portfolio/static/css/main.ee90a00f.css.map",
-    "main.1055501f.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.1055501f.js.map",
+    "main.2257666c.js.map": "/WHYELAB_UIUX-Portfolio/static/js/main.2257666c.js.map",
     "787.57e50c62.chunk.js.map": "/WHYELAB_UIUX-Portfolio/static/js/787.57e50c62.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee90a00f.css",
-    "static/js/main.1055501f.js"
+    "static/js/main.2257666c.js"
   ]
 }
