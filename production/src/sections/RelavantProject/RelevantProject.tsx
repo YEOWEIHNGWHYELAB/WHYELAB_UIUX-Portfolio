@@ -26,8 +26,9 @@ function getRandomDarkColor() {
 const projects = [
     {
         title: "Bot The Builder",
+        devpostLink: "https://devpost.com/software/bot-the-builder",
         technologies:
-            "React, gRPC, Redis, PostgreSQL, MongoDB",
+            "React, ReactFlow, gRPC, Redis, PostgreSQL, MongoDB",
         description:
             "A bot development platform with a visual task-graph IDE for design and control bot behavior via interconnected workflows. Each workflow is composed of tasks, which are instantiated either manually or on a scheduled (cron-based) basis. Each task consists of a set of task nodes that could be input, procedure, checker types. Each task is executed by an executor / worker that executes the task nodes enqueued on the task queue, the task completes when all the task nodes are executed.",
     },
