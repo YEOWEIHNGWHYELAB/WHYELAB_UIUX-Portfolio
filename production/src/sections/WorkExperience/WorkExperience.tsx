@@ -101,6 +101,10 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
           src: reactIcon,
         },
         {
+          name: "Cypress",
+          src: cypressIcon,
+        },
+        {
           name: "Figma",
           src: figmaIcon,
         },
