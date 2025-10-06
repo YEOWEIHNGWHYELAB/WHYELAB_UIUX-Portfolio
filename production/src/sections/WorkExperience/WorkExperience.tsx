@@ -53,7 +53,7 @@ const WorkExperience = forwardRef<HTMLDivElement>((props, ref) => {
     {
       company: "TikTok",
       date: "July 2024 - Present",
-      title: "Software Engineer",
+      title: "Backend Software Engineer",
       location: "Singapore",
       description: `
                 • Merge data coming from TikTok trill & musical_ly on the BTM pipeline.
