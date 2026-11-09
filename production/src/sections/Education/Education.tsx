@@ -27,8 +27,8 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
   const educations = [
     {
       school: "Georgia Institute of Technology",
-      description: "Online Master of Science in Computer Science (OMSCS)",
-      date: "January 2026 - Present",
+      description: "Master of Science in Computer Science (OMSCS)",
+      date: "August 2026 - Present",
       logo: gatechLogo,
     },
     {

@@ -35,9 +35,9 @@ const AboutMe = forwardRef<HTMLDivElement>((props, ref) => {
                 </Typography>
 
                 <Typography variant="body1">
-                    I'm <span style={{color: "red"}}>WEI HNG</span>, a Backend Engineer @TikTok,
-                    passionate about building scalable & efficient systems. Graduated with
-                    a degree in Computer Engineering @NUS.
+                    Hi, I'm <span style={{color: "red"}}>WEI HNG</span> — a Backend Engineer at TikTok who enjoys building scalable and efficient systems.
+
+                    I'm a NUS Computer Engineering graduate and currently pursuing my Master's in Computer Science at Georgia Tech, exploring the intersection of distributed systems and AI.
                 </Typography>
                 <Typography variant="body1" display={"flex"} justifyContent={"center"}>
                     +65 9621 4659 | yeoweihngywh@gmail.com
