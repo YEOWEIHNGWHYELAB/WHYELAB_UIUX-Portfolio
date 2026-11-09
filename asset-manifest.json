@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WHYELAB_UIUX-Portfolio/static/css/main.67aadaf5.css",
-    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.b0fd58ea.js",
+    "main.js": "/WHYELAB_UIUX-Portfolio/static/js/main.6d5e5803.js",
     "static/js/27.08ce0d2f.chunk.js": "/WHYELAB_UIUX-Portfolio/static/js/27.08ce0d2f.chunk.js",
     "static/media/govtech-logo.gif": "/WHYELAB_UIUX-Portfolio/static/media/govtech-logo.e5a33fdc6ed8c6ef8497.gif",
     "static/media/fa-solid-900.ttf": "/WHYELAB_UIUX-Portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
@@ -48,6 +48,7 @@
     "static/media/css.png": "/WHYELAB_UIUX-Portfolio/static/media/css.4a6549b8c2b4cda8bb88.png",
     "static/media/anacle-logo.png": "/WHYELAB_UIUX-Portfolio/static/media/anacle-logo.a6265f9de349f9fc038d.png",
     "static/media/fa-v4compatibility.ttf": "/WHYELAB_UIUX-Portfolio/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/georgia-tech-logo.svg": "/WHYELAB_UIUX-Portfolio/static/media/georgia-tech-logo.9ae8475f00640c03fb17e8eddbe84e4b.svg",
     "static/media/fa-v4compatibility.woff2": "/WHYELAB_UIUX-Portfolio/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "static/media/aspnet.svg": "/WHYELAB_UIUX-Portfolio/static/media/aspnet.cb6c43d550f4ed351cda9181b7cb7fd8.svg",
     "static/media/java.svg": "/WHYELAB_UIUX-Portfolio/static/media/java.8cb1fd4a951e0324c83e632215f39b64.svg",
@@ -57,6 +58,6 @@
   },
   "entrypoints": [
     "static/css/main.67aadaf5.css",
-    "static/js/main.b0fd58ea.js"
+    "static/js/main.6d5e5803.js"
   ]
 }
