@@ -1,6 +1,7 @@
 import { forwardRef, useEffect, useState } from "react";
 import { Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
 
+import gatechLogo from "../../images/school/georgia-tech-logo.svg";
 import nusLogo from "../../images/school/nus-logo.png";
 import asuLogo from "../../images/school/asu-logo.png";
 import tpjcLogo from "../../images/school/tpjc-logo.png";
@@ -24,6 +25,12 @@ const Education = forwardRef<HTMLDivElement>((props, ref) => {
   }, []);
 
   const educations = [
+    {
+      school: "Georgia Institute of Technology",
+      description: "Master of Science in Computer Science (OMSCS)",
+      date: "August 2026 - Present",
+      logo: gatechLogo,
+    },
     {
       school: "National University of Singapore",
       description: "Bachelor of Engineering (Computer Engineering)",
